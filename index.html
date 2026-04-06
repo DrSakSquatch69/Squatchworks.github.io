@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -61,10 +61,13 @@
             color: inherit;
         }
         .project-card:hover { transform: translateY(-5px); border-color: var(--color-primary); }
-        .project-img { width: 100%; height: 200px; background: #1a1f1a; object-fit: cover; }
+        .project-img-container { width: 100%; height: 200px; background: #1a1f1a; position: relative; }
+        .project-img { width: 100%; height: 100%; object-fit: cover; }
+        .project-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: var(--color-border); font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
+        
         .project-info { padding: 1.5rem; }
         .project-info h3 { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem; }
-        .project-info p { color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1rem; }
+        .project-info p { color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1rem; height: 3.8em; overflow: hidden; }
         .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
         .tag { background: var(--color-primary-glow); color: var(--color-primary); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
 
@@ -123,7 +126,9 @@
             <div class="projects-grid">
                 <!-- Arachnivasion -->
                 <a href="Projects/Arachnivasion" class="project-card">
-                    <img src="Projects/Arachnivasion/Visuals/Gameplay.png" alt="Arachnivasion" class="project-img">
+                    <div class="project-img-container">
+                        <img src="Projects/Arachnivasion/Visuals/Gameplay.png" alt="Arachnivasion" class="project-img">
+                    </div>
                     <div class="project-info">
                         <h3>Arachnivasion</h3>
                         <p>3D Space Invaders reimagining built with Vulkan. Features a custom Flask backend for global leaderboards.</p>
@@ -137,7 +142,9 @@
 
                 <!-- Veggie Town Massacre -->
                 <a href="Projects/Veggie Town Massacre" class="project-card">
-                    <img src="Assets/Screenshots/vtm.png" alt="Veggie Town Massacre" class="project-img">
+                    <div class="project-img-container">
+                        <img src="Projects/Veggie Town Massacre/Visuals/Screenshot 2026-04-06 192357.png" alt="Veggie Town Massacre" class="project-img">
+                    </div>
                     <div class="project-info">
                         <h3>Veggie Town Massacre</h3>
                         <p>Unity team project. Owned AI systems, level design, and UI architecture for this chaotic wave shooter.</p>
@@ -150,7 +157,9 @@
 
                 <!-- Game of Life -->
                 <a href="Projects/GameOfLife" class="project-card">
-                    <img src="Assets/Screenshots/gol.png" alt="Game of Life" class="project-img">
+                    <div class="project-img-container">
+                        <img src="Assets/Screenshots/Screenshot 2026-04-06 102649.png" alt="Game of Life" class="project-img">
+                    </div>
                     <div class="project-info">
                         <h3>Game of Life</h3>
                         <p>Complete C++ implementation of Conway's cellular automaton with custom GUI and file persistence.</p>
@@ -163,7 +172,9 @@
 
                 <!-- Bricks Breaker -->
                 <a href="Projects/BricksBreaker" class="project-card">
-                    <img src="Projects/BricksBreaker/Visuals/Gameplay.png" alt="Bricks Breaker" class="project-img">
+                    <div class="project-img-container">
+                        <img src="Projects/BricksBreaker/Visuals/Gameplay.png" alt="Bricks Breaker" class="project-img">
+                    </div>
                     <div class="project-info">
                         <h3>Bricks Breaker</h3>
                         <p>Standard arcade implementation in C++ focused on clean OOP and collision mathematics.</p>
@@ -175,7 +186,9 @@
                 
                 <!-- Dev4 -->
                 <a href="Projects/Dev4 unnamed project" class="project-card">
-                    <div class="project-img"></div>
+                    <div class="project-img-container">
+                        <div class="project-placeholder">Visuals Coming Soon</div>
+                    </div>
                     <div class="project-info">
                         <h3>Vulkan Engine Base</h3>
                         <p>Core solo engine prototype utilizing EnTT ECS. Served as the foundation for future team projects.</p>
@@ -188,7 +201,9 @@
 
                 <!-- Cryptid Tracker -->
                 <a href="Projects/Cryptid-tracker-mobile" class="project-card">
-                    <div class="project-img"></div>
+                    <div class="project-img-container">
+                        <div class="project-placeholder">Visuals Coming Soon</div>
+                    </div>
                     <div class="project-info">
                         <h3>Cryptid Tracker (In-Dev)</h3>
                         <p>Mobile utility app for tracking cryptid sightings. Focused on UX and system design.</p>
