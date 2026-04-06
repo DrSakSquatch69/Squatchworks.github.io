@@ -1,0 +1,4 @@
+[Fri Jan  9 17:03:12 2026] ThreadID[35004]	[EVENT]	LOADING GAME LEVEL [DATA ORIENTED]
+[Fri Jan  9 17:03:12 2026] ThreadID[35004]	[MESSAGE]	Begin Reading Game Level Text File.
+[Fri Jan  9 17:03:12 2026] ThreadID[35004]	[ERROR]	Game level not found: ../Levels/GameLevel.json
+[Fri Jan  9 17:03:12 2026] ThreadID[35004]	[ERROR]	Fatal error reading game level, aborting level load.

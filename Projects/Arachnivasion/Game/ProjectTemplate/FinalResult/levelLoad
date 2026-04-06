@@ -1,0 +1,21 @@
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[EVENT]	LOADING GAME LEVEL [DATA ORIENTED]
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[MESSAGE]	Begin Reading Game Level Text File.
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[MESSAGE]	Fireball.h2b
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[INFO]	Boundary: Left -0.554330 Right 0.589906 Bottom 1.103265 Top 2.103265 Near -0.580944 Far 0.580943
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[MESSAGE]	Spider.h2b
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[INFO]	Boundary: Left -4.622127 Right 4.622127 Bottom 0.000033 Top 10.657980 Near -1.911183 Far 1.915005
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[MESSAGE]	Ground.h2b
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[INFO]	Boundary: Left -25.000000 Right 25.000000 Bottom 0.000000 Top 0.000000 Near -25.000000 Far 25.000000
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[MESSAGE]	Hazmat_Character.h2b
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[INFO]	Boundary: Left -0.967202 Right 0.989394 Bottom -0.048975 Top 1.761221 Near -1.741199 Far 2.351105
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[MESSAGE]	Web.h2b
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[INFO]	Boundary: Left -25.000000 Right 25.000000 Bottom 0.000000 Top 0.000000 Near -25.000000 Far 25.000000
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[MESSAGE]	Game Level File Reading Complete.
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[MESSAGE]	Begin Importing .H2B File Data.
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[INFO]	H2B Imported: Fireball.h2b
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[INFO]	H2B Imported: Ground.h2b
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[INFO]	H2B Imported: Hazmat_Character.h2b
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[INFO]	H2B Imported: Spider.h2b
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[INFO]	H2B Imported: Web.h2b
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[MESSAGE]	Importing of .H2B File Data Complete.
+[Fri Jan  9 17:05:22 2026] ThreadID[202004]	[EVENT]	GAME LEVEL WAS LOADED TO CPU [DATA ORIENTED]

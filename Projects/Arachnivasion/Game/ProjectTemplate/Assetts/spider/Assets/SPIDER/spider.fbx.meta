@@ -1,0 +1,2647 @@
+fileFormatVersion: 2
+guid: 9e0b4826df8663541bc83dc5af7f221f
+timeCreated: 1468436546
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: faceend
+    100002: head
+    100004: L1
+    100006: L2
+    100008: L3
+    100010: L4
+    100012: L_Leg1
+    100014: L_Leg11
+    100016: L_Leg12
+    100018: L_Leg13
+    100020: L_Leg14
+    100022: L_Leg2
+    100024: L_Leg21
+    100026: L_Leg22
+    100028: L_Leg23
+    100030: L_Leg24
+    100032: L_Leg3
+    100034: L_Leg31
+    100036: L_Leg32
+    100038: L_Leg33
+    100040: L_Leg34
+    100042: L_Leg4
+    100044: L_Leg41
+    100046: L_Leg42
+    100048: L_Leg43
+    100050: L_Leg44
+    100052: Leftjaw
+    100054: leftmouth
+    100056: Null
+    100058: R1
+    100060: R2
+    100062: R3
+    100064: R4
+    100066: R_Leg1
+    100068: R_Leg11
+    100070: R_Leg12
+    100072: R_Leg13
+    100074: R_Leg14
+    100076: R_Leg2
+    100078: R_Leg21
+    100080: R_Leg22
+    100082: R_Leg23
+    100084: R_Leg24
+    100086: R_Leg3
+    100088: R_Leg31
+    100090: R_Leg32
+    100092: R_Leg33
+    100094: R_Leg34
+    100096: R_Leg4
+    100098: R_Leg41
+    100100: R_Leg42
+    100102: R_Leg43
+    100104: R_Leg44
+    100106: rear
+    100108: rear1
+    100110: rear2
+    100112: rear3
+    100114: Rightjaw
+    100116: rightmouth
+    100118: root
+    100120: //RootNode
+    100122: spider1MESH
+    400000: faceend
+    400002: head
+    400004: L1
+    400006: L2
+    400008: L3
+    400010: L4
+    400012: L_Leg1
+    400014: L_Leg11
+    400016: L_Leg12
+    400018: L_Leg13
+    400020: L_Leg14
+    400022: L_Leg2
+    400024: L_Leg21
+    400026: L_Leg22
+    400028: L_Leg23
+    400030: L_Leg24
+    400032: L_Leg3
+    400034: L_Leg31
+    400036: L_Leg32
+    400038: L_Leg33
+    400040: L_Leg34
+    400042: L_Leg4
+    400044: L_Leg41
+    400046: L_Leg42
+    400048: L_Leg43
+    400050: L_Leg44
+    400052: Leftjaw
+    400054: leftmouth
+    400056: Null
+    400058: R1
+    400060: R2
+    400062: R3
+    400064: R4
+    400066: R_Leg1
+    400068: R_Leg11
+    400070: R_Leg12
+    400072: R_Leg13
+    400074: R_Leg14
+    400076: R_Leg2
+    400078: R_Leg21
+    400080: R_Leg22
+    400082: R_Leg23
+    400084: R_Leg24
+    400086: R_Leg3
+    400088: R_Leg31
+    400090: R_Leg32
+    400092: R_Leg33
+    400094: R_Leg34
+    400096: R_Leg4
+    400098: R_Leg41
+    400100: R_Leg42
+    400102: R_Leg43
+    400104: R_Leg44
+    400106: rear
+    400108: rear1
+    400110: rear2
+    400112: rear3
+    400114: Rightjaw
+    400116: rightmouth
+    400118: root
+    400120: //RootNode
+    400122: spider1MESH
+    4300000: spider1MESH
+    7400000: ALLANIMS
+    7400002: walk
+    7400004: attack1
+    7400006: attack2
+    7400008: eat
+    7400010: defend
+    7400012: hit1
+    7400014: hit2
+    7400016: crouch
+    7400018: stand
+    7400020: idle1
+    7400022: idle2
+    7400024: jump
+    7400026: sidestep
+    7400028: die1
+    7400030: die2
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: spider1MESH
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ALLANIMS
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 330
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: attack1
+      takeName: C4D Animation Take
+      firstFrame: 46
+      lastFrame: 65
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: attack2
+      takeName: C4D Animation Take
+      firstFrame: 66
+      lastFrame: 85
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: eat
+      takeName: C4D Animation Take
+      firstFrame: 86
+      lastFrame: 99
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: defend
+      takeName: C4D Animation Take
+      firstFrame: 100
+      lastFrame: 120
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: hit1
+      takeName: C4D Animation Take
+      firstFrame: 121
+      lastFrame: 134
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: hit2
+      takeName: C4D Animation Take
+      firstFrame: 135
+      lastFrame: 149
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: crouch
+      takeName: C4D Animation Take
+      firstFrame: 150
+      lastFrame: 155
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: stand
+      takeName: C4D Animation Take
+      firstFrame: 157
+      lastFrame: 162
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle1
+      takeName: C4D Animation Take
+      firstFrame: 164
+      lastFrame: 213
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle2
+      takeName: C4D Animation Take
+      firstFrame: 214
+      lastFrame: 249
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: jump
+      takeName: C4D Animation Take
+      firstFrame: 250
+      lastFrame: 269
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sidestep
+      takeName: C4D Animation Take
+      firstFrame: 270
+      lastFrame: 279
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: die1
+      takeName: C4D Animation Take
+      firstFrame: 280
+      lastFrame: 299
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: die2
+      takeName: C4D Animation Take
+      firstFrame: 300
+      lastFrame: 329
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L1
+        weight: 1
+      - path: L2
+        weight: 1
+      - path: L3
+        weight: 1
+      - path: L4
+        weight: 1
+      - path: R1
+        weight: 1
+      - path: R2
+        weight: 1
+      - path: R3
+        weight: 1
+      - path: R4
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/head
+        weight: 1
+      - path: root/head/faceend
+        weight: 1
+      - path: root/head/faceend/Leftjaw
+        weight: 1
+      - path: root/head/faceend/Leftjaw/leftmouth
+        weight: 1
+      - path: root/head/faceend/Rightjaw
+        weight: 1
+      - path: root/head/faceend/Rightjaw/rightmouth
+        weight: 1
+      - path: root/L_Leg1
+        weight: 1
+      - path: root/L_Leg1/L_Leg11
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13
+        weight: 1
+      - path: root/L_Leg1/L_Leg11/L_Leg12/L_Leg13/L_Leg14
+        weight: 1
+      - path: root/L_Leg2
+        weight: 1
+      - path: root/L_Leg2/L_Leg21
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23
+        weight: 1
+      - path: root/L_Leg2/L_Leg21/L_Leg22/L_Leg23/L_Leg24
+        weight: 1
+      - path: root/L_Leg3
+        weight: 1
+      - path: root/L_Leg3/L_Leg31
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33
+        weight: 1
+      - path: root/L_Leg3/L_Leg31/L_Leg32/L_Leg33/L_Leg34
+        weight: 1
+      - path: root/L_Leg4
+        weight: 1
+      - path: root/L_Leg4/L_Leg41
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43
+        weight: 1
+      - path: root/L_Leg4/L_Leg41/L_Leg42/L_Leg43/L_Leg44
+        weight: 1
+      - path: root/R_Leg1
+        weight: 1
+      - path: root/R_Leg1/R_Leg11
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13
+        weight: 1
+      - path: root/R_Leg1/R_Leg11/R_Leg12/R_Leg13/R_Leg14
+        weight: 1
+      - path: root/R_Leg2
+        weight: 1
+      - path: root/R_Leg2/R_Leg21
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23
+        weight: 1
+      - path: root/R_Leg2/R_Leg21/R_Leg22/R_Leg23/R_Leg24
+        weight: 1
+      - path: root/R_Leg3
+        weight: 1
+      - path: root/R_Leg3/R_Leg31
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33
+        weight: 1
+      - path: root/R_Leg3/R_Leg31/R_Leg32/R_Leg33/R_Leg34
+        weight: 1
+      - path: root/R_Leg4
+        weight: 1
+      - path: root/R_Leg4/R_Leg41
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43
+        weight: 1
+      - path: root/R_Leg4/R_Leg41/R_Leg42/R_Leg43/R_Leg44
+        weight: 1
+      - path: root/rear
+        weight: 1
+      - path: root/rear/rear1
+        weight: 1
+      - path: root/rear/rear1/rear2
+        weight: 1
+      - path: root/rear/rear1/rear2/rear3
+        weight: 1
+      - path: spider1MESH
+        weight: 1
+      - path: spider1MESH/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
