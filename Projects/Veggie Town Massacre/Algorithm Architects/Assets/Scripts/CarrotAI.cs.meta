@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 24f110b514e94034f8d7b3b3e7ce7b81
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - model: {instanceID: 0}
+  - agent: {instanceID: 0}
+  - rb: {instanceID: 0}
+  - headPosition: {instanceID: 0}
+  - shootPosition: {instanceID: 0}
+  - bullet: {fileID: 5223472228960464512, guid: ce876281b37dd264d9fe16614fcb2932, type: 3}
+  - enemyPrefab: {fileID: 2514469933649856281, guid: b5172cea73966ba44bca39dd0a9f0049, type: 3}
+  - enemyHp: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

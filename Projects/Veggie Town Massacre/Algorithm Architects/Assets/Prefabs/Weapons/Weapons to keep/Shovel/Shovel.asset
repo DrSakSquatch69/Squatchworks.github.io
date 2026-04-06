@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c6e66585ffdf7846974606f375fc14e, type: 3}
+  m_Name: Shovel
+  m_EditorClassIdentifier: 
+  gunModel: {fileID: 6933959015319496239, guid: 6520269a192a24947922f6cdfc21a3ac, type: 3}
+  prefab: {fileID: 700963247390411044, guid: 79d7e5c2458ceda4992643a554560a1e, type: 3}
+  shootDamage: 45
+  shootRate: 1.2
+  shootDist: 6
+  magSize: 0
+  ammoremaining: 0
+  ammo: 0
+  isMelee: 1
+  icon: {fileID: 2800000, guid: c9786faa0827b1548aee390d5f5633a7, type: 3}
+  placement: {x: 0, y: 0, z: 0}
+  hitEffect: {fileID: 5024009746357069192, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
+  shootSound: {fileID: 8300000, guid: 2073e34606acba9479ef8f34d7405d2c, type: 3}

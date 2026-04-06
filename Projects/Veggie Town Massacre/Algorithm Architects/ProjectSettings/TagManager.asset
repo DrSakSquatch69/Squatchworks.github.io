@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Bar_Swing
+  - BouncePad
+  - Enemy
+  - Wall
+  - Cloth
+  - Weapon
+  - Pistol EG POS
+  - Pistol T1 POS
+  - Pistol T2 POS
+  - Pistol T3 POS
+  - Pistol T4 POS
+  - Shotgun POS
+  - SMG T2
+  - SMG T1
+  - AR POS
+  - Daikon
+  - DaikonKing
+  - Speed
+  - Jump
+  - Protect
+  - Ammo
+  - Bouncepad
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Player Bullet
+  - Enemy
+  - Enemy Bullet
+  - Wall
+  - Bars
+  - BouncePad
+  - Destroyable Bullet
+  - PlayerGun
+  - Mud
+  - Toxic Cloud
+  - Minimap Icon
+  - OrangeEnemy
+  - DaikonKing
+  - Plants
+  - flower
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
