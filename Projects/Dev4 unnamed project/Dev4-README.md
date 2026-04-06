@@ -1,29 +1,32 @@
-# Untitled FPS — Vulkan ECS Game
+# Vulkan ECS Engine — Solo Prototype
 
 > **Role:** Solo Developer  
 > **Language:** C++  
 > **Graphics API:** Vulkan  
 > **Architecture:** Entity Component System (EnTT)  
-> **Type:** 3D First-Person Shooter  
+> **Type:** 3D Game Engine Prototype / FPS Foundation  
 
 ---
 
 ## About
 
-A 3D first-person shooter built from scratch using Vulkan and the EnTT Entity Component System. The project features a custom Vulkan rendering pipeline, player movement, enemy entities, model loading, and a modular ECS architecture where each component manages its own update logic through signal-driven systems.
+This is the solo foundation project built as a prerequisite to Arachnivasion. Each student on the team independently implemented the same Vulkan/EnTT engine base — player movement, enemy entities, level loading, and the CCL signal system — before the team merged their work into the collaborative Arachnivasion project.
+
+Building this solo first meant every team member had deep ownership of the underlying architecture. The codebase demonstrates direct Vulkan API usage, modular ECS design, and 3D game loop fundamentals without any engine abstraction layer.
 
 ---
 
 ## Features
 
 - **Custom Vulkan Renderer** — direct Vulkan API rendering with buffer management, GPU instance updates, and draw pipeline
-- **ECS Architecture** — EnTT-based with the CCL (Connect Component Logic) pattern for signal-driven component updates
-- **Player System** — input-driven player movement with configurable speed and entity management
-- **Game Manager** — centralized game state with player/enemy visibility flags and entity collection management
+- **ECS Architecture** — EnTT-based with CCL (Connect Component Logic) pattern for signal-driven component updates
+- **Player System** — keyboard-driven first-person movement with configurable speed and entity management
+- **Enemy Entities** — enemy spawning and management via `SpawnHelpers`
+- **Game Manager** — centralized game state tracking player/enemy visibility flags and entity collections
 - **Model Manager** — 3D model loading and entity creation from model assets
 - **Level Loading** — custom level component system for environment geometry
-- **Entity Collections** — named entity grouping system for managing logical groups of game objects
-- **Modular Codebase** — organized into APP, DRAW, GAME, and UTIL modules
+- **Entity Collections** — named grouping system for managing logical sets of game objects
+- **Modular Architecture** — organized into APP, DRAW, GAME, UTIL, and CCL modules
 
 ---
 
@@ -31,13 +34,19 @@ A 3D first-person shooter built from scratch using Vulkan and the EnTT Entity Co
 
 | Module | Key Files | Responsibility |
 |--------|-----------|---------------|
-| `APP` | `Window.hpp` | Window creation and management |
+| `APP` | `Window.hpp` | Window creation and OS message loop |
 | `DRAW` | `VulkanRenderer`, `VulkanBuffers`, `DrawComponents`, `LevelComponents` | Vulkan rendering pipeline, GPU buffers, level geometry |
 | `GAME` | `GameManager`, `player`, `ModelManager`, `GameComponents`, `SpawnHelpers` | Game logic, player control, entity management |
 | `UTIL` | `Utilities`, `GameConfig` | Shared utilities and configuration |
-| `CCL` | `CCL.h/.cpp` | Signal-driven component update system |
+| `CCL` | `CCL.h/.cpp` | Signal-driven component update binding system |
 
-The CCL pattern enables each component definition file to register its own update systems via EnTT signals, making the architecture efficient and modular — component updates are only triggered when explicitly needed.
+The CCL pattern enables each component definition to register its own update systems via EnTT signals — component updates only fire when explicitly needed, keeping the loop efficient and the architecture data-driven.
+
+---
+
+## Relationship to Arachnivasion
+
+This project was the individual prerequisite to the Arachnivasion team project. After each student completed their solo version, the team combined and extended this foundation — adding spiders, shooting mechanics, wave progression, and the live online leaderboard — to create Arachnivasion.
 
 ---
 

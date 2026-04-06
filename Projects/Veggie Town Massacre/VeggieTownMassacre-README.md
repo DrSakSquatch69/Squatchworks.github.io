@@ -1,46 +1,73 @@
 # Veggie Town Massacre
 
 > **Team:** Algorithm Architects  
-> **Role:** Gameplay Programmer (Team Project)  
+> **Role:** Gameplay Programmer & Level Designer (Team Project)  
 > **Engine:** Unity (C#) | URP  
-> **Type:** 3D Action / Shooter  
+> **Type:** 3D Action / Wave Shooter  
 
 ---
 
 ## About
 
-Veggie Town Massacre is a 3D action game where players fight waves of sentient vegetable enemies terrorizing a town. Built as a team project by Algorithm Architects, the game features multiple enemy types with unique AI behaviors, a gun and ammo system, power-ups, a day/night cycle, environmental effects, and a boss fight against the Daikon King.
+Veggie Town Massacre is a 3D wave-based action shooter where players fight off hordes of sentient vegetable enemies terrorizing a town. Built across multiple sprints by Team Algorithm Architects, the game features distinct enemy AI types, a modular weapon system, environmental effects, a boss encounter, and a fully released installer build. Jacob served as the team's primary enemy AI programmer, level designer, and QA lead.
 
 ---
 
-## Features
+## Jacob's Contributions
 
-- **Multiple Enemy Types** — Carrot, Daikon, and Toxic enemies each with distinct AI behaviors and attack patterns
-- **Boss Fight** — Daikon King boss encounter with unique mechanics
-- **Enemy Factory System** — wave-based spawning with `EnemyFactory` managing enemy creation and difficulty scaling
-- **Gun System** — modular gun stats, ammo pickups, and destroyable bullet physics
-- **Power-Up System** — collectible power-ups that modify player abilities
-- **Day/Night Cycle** — dynamic lighting system with `DayNightCycle` controller affecting skybox and environment
-- **Weather Effects** — rain controller with particle-based weather system
-- **Camera System** — custom `CameraController` for third-person gameplay
-- **Audio System** — menu music manager, player sound effects, spatial audio
-- **Loading Screen** — scene transition system with loading screen prefab
-- **Damage Interface** — `IDamage` interface for consistent damage handling across all entities
-- **Tutorial System** — tutorial scene introducing game mechanics to new players
-- **Bounce Pads** — environmental bounce mechanics for traversal
+### Pre-Production
+- **Full level design and layout** — designed and built the game world, placed all environmental objects, and established the play space used throughout the entire game
+- Defined product backlog items for the Beet, Turnip, and Orange enemy types
+
+### Alpha Sprint
+- Implemented **Orange enemy unique AI** — custom behavior distinct from base enemy logic
+- Implemented **Beet enemy AI** and **Turnip enemy AI**
+- Built the **Poison Gas Cloud** system — AI behavior, visual effects, and hazard logic
+- Added **menu music** and **button click audio feedback** for the main menu
+- Implemented **cross-level persistence** — player health, progress, and pickups correctly carry over between levels
+
+### Beta Sprint
+- Finalized and polished **Beet, Turnip, Orange, and Tomato** enemy behaviors
+- Performed **asset cleanup and optimization** — removed unused assets to reduce project size
+- Verified **TRC (Technical Requirements Checklist)** compliance
+- Created the **game installer** for final release distribution
+- Implemented **gameplay balance changes** across enemy stats and spawn rates
+- **Stylized and refined the UI** across menus and HUD elements
+
+### QA & Bug Fixes
+- Fixed **main menu button scaling** issues at various resolutions
+- Fixed **button hitbox misalignment** on the main menu
+- Resolved **overlapping audio** when clicking main menu buttons rapidly
+- Fixed **Credits button** causing unexpected game scene loads
+- Fixed multiple **Poison Gas cloud bugs**
+- Resolved **game crashes** triggered by quitting from the pause menu
+
+---
+
+## Full Feature Set
+
+- **Multiple Enemy Types** — Carrot, Daikon, Beet, Turnip, Orange, Tomato, and Toxic enemies with distinct AI
+- **Boss Fight** — Daikon King with unique mechanics
+- **Enemy Factory System** — wave-based spawning with difficulty scaling
+- **Gun System** — modular stats, ammo pickups, and destroyable bullet physics
+- **Power-Up System** — collectible pickups modifying player abilities
+- **Day/Night Cycle** — dynamic lighting affecting skybox and environment
+- **Weather System** — particle-based rain controller
+- **Poison Gas Hazards** — environmental hazard zones with visual feedback
+- **Cross-Level Persistence** — player state preserved across scene transitions
+- **Audio System** — spatial audio, menu music, player SFX
+- **Installer Build** — packaged for end-user distribution
 
 ---
 
 ## Architecture
 
-The project follows a component-based Unity architecture with clear separation between player systems, enemy AI, environmental effects, and game management.
-
 | System | Key Scripts |
 |--------|------------|
 | Player | `PlayerController`, `PlayerSoundManager`, `gun`, `gunStats` |
-| Enemies | `EnemyAI`, `CarrotAI`, `DaikonAI`, `DaikonKing`, `ToxicEnemy`, `EnemyFactory` |
+| Enemies | `EnemyAI`, `CarrotAI`, `DaikonAI`, `BeetAI`, `TurnipAI`, `OrangeAI`, `ToxicEnemy`, `DaikonKing`, `EnemyFactory` |
 | Combat | `IDamage`, `damage`, `DestroyableBullet` |
-| Environment | `DayNightCycle`, `RainController`, `SkyboxController`, `BouncePad` |
+| Environment | `DayNightCycle`, `RainController`, `SkyboxController`, `BouncePad`, `GasCloud` |
 | Game Flow | `gameManager`, `MainManager`, `LoadingScreen`, `ButtonFns` |
 | Pickups | `pickUp`, `PowerupPickup`, `Ammo Pickup` |
 
@@ -48,13 +75,13 @@ The project follows a component-based Unity architecture with clear separation b
 
 ## Team
 
-Algorithm Architects — Jacob, Anthony, Chelsea, Jeff, Xavier
+Algorithm Architects — Jacob Blackburn, Anthony, Chelsea, Jeff, Xavier
 
 ---
 
 ## Build
 
-Open in Unity (URP project). Load the Main Game Scene and press Play.
+Open in Unity (URP project). Load the Main Game Scene and press Play. Or run the packaged installer for the release build.
 
 ---
 

@@ -2,26 +2,27 @@
 
 > **Role:** Solo Developer  
 > **Language:** C++  
-> **Framework:** Windows Console (Win32 API)  
-> **Type:** Console Game  
+> **Renderer:** Console (Windows API)  
+> **Type:** 2D Arcade Game  
 
 ---
 
 ## About
 
-A classic brick breaker game rendered entirely in the Windows console using ASCII/extended character set (CP437). The player controls a paddle to bounce a ball into a grid of bricks, clearing them for points. Built from scratch with custom collision detection, object-oriented game architecture, and a frame-rate controlled game loop.
+Bricks Breaker is a classic arcade-style brick breaking game built entirely from scratch in C++ using a console-based renderer. Every system — the ball physics, brick grid, paddle input, and collision detection — was implemented manually without a game engine. This was an early foundational project focused on core OOP design patterns and real-time game loop architecture.
 
 ---
 
 ## Features
 
-- **Console Rendering** — uses Windows console output with extended character set for drawing paddles, bricks, and the ball
-- **Paddle & Ball Physics** — ball bounces off walls, paddle, and bricks with velocity-based movement
-- **Collision Detection** — custom `Contains()` checks for ball-to-brick and ball-to-paddle collisions
-- **Brick Grid** — dynamically generated brick layout with colored bricks
-- **Frame Rate Control** — adjustable frame timing using `std::chrono` (speed up/slow down with arrow keys)
-- **Game Reset** — reset ball and full game state for replayability
-- **OOP Architecture** — `BaseObject` inheritance hierarchy for all game entities
+- **Real-Time Game Loop** — continuous update/render cycle managing all game state
+- **Ball Physics** — velocity-based movement with angle reflection off walls, paddle, and bricks
+- **Collision Detection** — custom AABB collision between ball, paddle, bricks, and boundaries
+- **Brick Grid** — destructible brick layout with hit detection and removal
+- **Paddle Control** — keyboard-driven paddle movement with boundary clamping
+- **Win/Loss States** — game over on ball loss, win condition on brick clear
+- **Console Renderer** — Windows console API rendering using a `Console` output system
+- **Object Hierarchy** — `BaseObject` base class extended by `Ball`, `Box` for shared position/rendering logic
 
 ---
 
@@ -29,27 +30,18 @@ A classic brick breaker game rendered entirely in the Windows console using ASCI
 
 | Class | Responsibility |
 |-------|---------------|
-| `Game` | Game loop, update/render cycle, collision logic, brick management |
-| `Ball` | Ball entity with velocity and movement updates |
-| `Box` | Paddle and brick entity with width, height, and hit detection |
-| `BaseObject` | Base class for position, drawing, and shared behavior |
-| `Console` | Console rendering utilities |
-
----
-
-## Controls
-
-| Key | Action |
-|-----|--------|
-| Left / Right | Move paddle |
-| Up Arrow | Increase game speed |
-| Down Arrow | Decrease game speed |
+| `Main` | Entry point, game initialization |
+| `Game` | Core game loop, state management, collision orchestration |
+| `Ball` | Ball entity — position, velocity, movement, reflection |
+| `Box` | Brick and paddle entity — position, dimensions, active state |
+| `BaseObject` | Shared base — position, size, render properties |
+| `Console` | Windows console output — cursor positioning, character rendering |
 
 ---
 
 ## Build
 
-Open `Bricks.sln` in Visual Studio and build. No external dependencies — uses only Win32 console APIs and the C++ standard library.
+Open `Bricks.sln` in Visual Studio and build. No external dependencies required.
 
 ---
 
