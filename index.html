@@ -1,471 +1,250 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jacob Blackburn | Squatch — Gameplay Programmer & Game Developer</title>
-  <meta name="description" content="Portfolio for Jacob Blackburn | Squatch — gameplay programmer and game developer focused on Unreal Engine, C++, systems design, and technical game projects." />
-  <meta property="og:title" content="Jacob Blackburn | Squatch — Gameplay Programmer & Game Developer" />
-  <meta property="og:description" content="Technical portfolio showcasing gameplay programming, systems design, and game development projects." />
-  <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://api.fontshare.com" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet">
-  <style>
-    :root, [data-theme="light"] {
-      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
-      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
-      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
-      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
-      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
-      --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.25rem;
-      --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem;
-      --space-20: 5rem; --space-24: 6rem;
-      --radius-sm: .375rem; --radius-md: .75rem; --radius-lg: 1rem; --radius-xl: 1.5rem; --radius-full: 9999px;
-      --font-body: 'Satoshi', Inter, sans-serif;
-      --font-display: 'Cabinet Grotesk', 'Satoshi', sans-serif;
-      --color-bg: #0d100e;
-      --color-surface: #131815;
-      --color-surface-2: #191f1b;
-      --color-surface-offset: #1e2621;
-      --color-border: rgba(210, 224, 213, 0.12);
-      --color-divider: rgba(210, 224, 213, 0.08);
-      --color-text: #edf3ee;
-      --color-text-muted: #a7b3aa;
-      --color-text-faint: #6e786f;
-      --color-primary: #5ca874;
-      --color-primary-hover: #4f9567;
-      --color-primary-active: #447f58;
-      --color-primary-highlight: rgba(92, 168, 116, 0.14);
-      --shadow-sm: 0 1px 2px rgba(0,0,0,.2);
-      --shadow-md: 0 12px 30px rgba(0,0,0,.25);
-      --shadow-lg: 0 24px 48px rgba(0,0,0,.35);
-      --content-default: 1120px;
-      --content-wide: 1280px;
-      --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      min-height: 100vh;
-      font-family: var(--font-body);
-      font-size: var(--text-base);
-      line-height: 1.6;
-      color: var(--color-text);
-      background:
-        radial-gradient(circle at top right, rgba(92,168,116,.12), transparent 28%),
-        radial-gradient(circle at 15% 10%, rgba(92,168,116,.08), transparent 20%),
-        linear-gradient(180deg, #0c0f0d 0%, #101412 100%);
-    }
-    a { color: inherit; text-decoration: none; }
-    img, svg { display: block; max-width: 100%; }
-    button { font: inherit; border: 0; background: none; color: inherit; cursor: pointer; }
-    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
-    .container { width: min(100% - 2rem, var(--content-default)); margin-inline: auto; }
-    .site-header {
-      position: sticky; top: 0; z-index: 30;
-      backdrop-filter: blur(14px);
-      background: rgba(13, 16, 14, 0.72);
-      border-bottom: 1px solid var(--color-divider);
-    }
-    .nav {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: var(--space-4) 0;
-    }
-    .brand { display: inline-flex; align-items: center; gap: var(--space-3); font-size: var(--text-sm); }
-    .brand-mark {
-      width: 2.5rem; height: 2.5rem; border-radius: 50%;
-      display: grid; place-items: center;
-      color: var(--color-bg);
-      background: linear-gradient(135deg, var(--color-primary), #8cc89d);
-      box-shadow: 0 0 0 6px rgba(92,168,116,.1);
-      font-weight: 800;
-    }
-    .brand-copy span { display: block; line-height: 1.15; }
-    .brand-copy .muted { color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: .12em; }
-    .nav-links { display: flex; gap: var(--space-5); font-size: var(--text-sm); color: var(--color-text-muted); }
-    .nav-links a:hover { color: var(--color-text); }
-    .hero {
-      padding: clamp(5rem, 10vw, 8rem) 0 var(--space-20);
-    }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: var(--space-10);
-      align-items: stretch;
-    }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: .5rem;
-      padding: .45rem .85rem;
-      border: 1px solid rgba(92,168,116,.2);
-      background: var(--color-primary-highlight);
-      border-radius: var(--radius-full);
-      color: #b9dfc4;
-      font-size: var(--text-xs);
-      text-transform: uppercase;
-      letter-spacing: .14em;
-    }
-    h1, h2, h3 { font-family: var(--font-display); line-height: 1.05; letter-spacing: -0.03em; }
-    h1 {
-      margin-top: var(--space-6);
-      font-size: clamp(3rem, 8vw, 6.5rem);
-      max-width: 10ch;
-    }
-    .hero p {
-      margin-top: var(--space-6);
-      color: var(--color-text-muted);
-      max-width: 62ch;
-    }
-    .hero-actions {
-      display: flex; flex-wrap: wrap; gap: var(--space-4);
-      margin-top: var(--space-8);
-    }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center;
-      min-height: 48px; padding: .85rem 1.25rem; border-radius: var(--radius-full);
-      border: 1px solid transparent; transition: all var(--transition-interactive);
-      font-size: var(--text-sm); font-weight: 700;
-    }
-    .btn-primary { background: var(--color-primary); color: #08100a; }
-    .btn-primary:hover { background: var(--color-primary-hover); transform: translateY(-1px); }
-    .btn-secondary { border-color: var(--color-border); background: rgba(255,255,255,.02); color: var(--color-text); }
-    .btn-secondary:hover { border-color: rgba(92,168,116,.35); background: rgba(92,168,116,.08); }
-    .hero-panel, .card, .mini-card, .timeline, .contact-card {
-      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow-md);
-    }
-    .hero-panel {
-      padding: var(--space-8);
-      display: grid; gap: var(--space-6);
-      position: relative; overflow: hidden;
-    }
-    .hero-panel::before {
-      content: "";
-      position: absolute; inset: auto -10% -25% auto;
-      width: 220px; height: 220px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(92,168,116,.25), transparent 65%);
-    }
-    .terminal {
-      background: #0b0e0c;
-      border: 1px solid rgba(92,168,116,.16);
-      border-radius: var(--radius-lg);
-      padding: var(--space-5);
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      font-size: .92rem;
-      color: #b9dfc4;
-    }
-    .terminal .line { color: #86d49d; }
-    .terminal .comment { color: #7e8d81; }
-    .stat-grid {
-      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4);
-    }
-    .stat {
-      padding: var(--space-5);
-      border-radius: var(--radius-lg);
-      background: rgba(255,255,255,.025);
-      border: 1px solid rgba(255,255,255,.06);
-    }
-    .stat strong { display: block; font-family: var(--font-display); font-size: var(--text-xl); }
-    .stat span { color: var(--color-text-muted); font-size: var(--text-sm); }
-    section { padding: var(--space-20) 0 0; }
-    .section-head {
-      display: flex; justify-content: space-between; gap: var(--space-6); align-items: end; margin-bottom: var(--space-8);
-    }
-    .section-head p { max-width: 58ch; color: var(--color-text-muted); }
-    .project-grid {
-      display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--space-5);
-    }
-    .card {
-      grid-column: span 6;
-      padding: var(--space-7);
-      display: grid; gap: var(--space-5);
-      min-height: 280px;
-    }
-    .card.featured { grid-column: span 12; grid-template-columns: 1.2fr .8fr; }
-    .card-top { display: flex; justify-content: space-between; gap: var(--space-4); align-items: start; }
-    .badge {
-      display: inline-flex; width: fit-content; padding: .4rem .7rem; border-radius: var(--radius-full);
-      font-size: var(--text-xs); letter-spacing: .12em; text-transform: uppercase;
-      color: #b9dfc4; background: rgba(92,168,116,.1); border: 1px solid rgba(92,168,116,.18);
-    }
-    .card h3 { font-size: var(--text-xl); }
-    .card p { color: var(--color-text-muted); }
-    .tags { display: flex; flex-wrap: wrap; gap: .65rem; }
-    .tags span {
-      padding: .45rem .7rem; border-radius: var(--radius-full); font-size: var(--text-xs);
-      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.06); color: var(--color-text-muted);
-    }
-    .code-block {
-      border-radius: var(--radius-lg);
-      background: #0c100d;
-      border: 1px solid rgba(92,168,116,.15);
-      padding: var(--space-5);
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      font-size: .92rem; color: #c4d4c8;
-      overflow: auto;
-    }
-    .two-col {
-      display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5);
-    }
-    .mini-card, .timeline, .contact-card { padding: var(--space-7); }
-    .skill-list, .contact-list { display: grid; gap: var(--space-4); }
-    .skill-line {
-      display: flex; justify-content: space-between; gap: var(--space-5);
-      padding-bottom: var(--space-3);
-      border-bottom: 1px solid var(--color-divider);
-      font-size: var(--text-sm);
-    }
-    .skill-line span:last-child { color: var(--color-text-muted); text-align: right; }
-    .timeline-item {
-      padding: var(--space-4) 0;
-      border-bottom: 1px solid var(--color-divider);
-    }
-    .timeline-item:last-child { border-bottom: 0; padding-bottom: 0; }
-    .timeline-item strong { display: block; font-size: 1rem; }
-    .timeline-item span { display: block; color: var(--color-text-muted); font-size: var(--text-sm); }
-    .contact-card p { color: var(--color-text-muted); max-width: 56ch; }
-    .contact-list a {
-      display: flex; justify-content: space-between; gap: var(--space-4);
-      padding: var(--space-4) 0; border-bottom: 1px solid var(--color-divider);
-    }
-    .contact-list a span:last-child { color: var(--color-primary); }
-    footer {
-      padding: var(--space-16) 0 var(--space-10);
-      color: var(--color-text-faint);
-      font-size: var(--text-sm);
-    }
-    @media (max-width: 980px) {
-      .hero-grid, .card.featured, .two-col { grid-template-columns: 1fr; }
-      .card, .card.featured { grid-column: span 12; }
-    }
-    @media (max-width: 720px) {
-      .nav { flex-direction: column; align-items: start; gap: var(--space-4); }
-      .nav-links { flex-wrap: wrap; gap: var(--space-3); }
-      .hero { padding-top: var(--space-16); }
-      .section-head { flex-direction: column; align-items: start; }
-      .stat-grid { grid-template-columns: 1fr; }
-      h1 { max-width: 100%; }
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob Blackburn | Squatch — Gameplay Programmer & Game Developer</title>
+    <meta name="description" content="Portfolio of Jacob Blackburn, a gameplay programmer and developer focused on C++, Unreal Engine, and innovative game systems." />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-bg: #0b0d0b;
+            --color-surface: #121512;
+            --color-primary: #4ade80;
+            --color-primary-glow: rgba(74, 222, 128, 0.15);
+            --color-text: #f0fdf4;
+            --color-text-muted: #94a3b8;
+            --color-border: #1e293b;
+            --font-main: 'Satoshi', sans-serif;
+            --font-display: 'Cabinet Grotesk', sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            background-color: var(--color-bg); 
+            color: var(--color-text); 
+            font-family: var(--font-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+        
+        header { padding: 2rem 0; border-bottom: 1px solid var(--color-border); }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; color: var(--color-primary); }
+        .nav-links a { color: var(--color-text-muted); text-decoration: none; margin-left: 2rem; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--color-primary); }
+
+        .hero { padding: 8rem 0; text-align: center; }
+        .hero h1 { font-family: var(--font-display); font-size: 4rem; margin-bottom: 1.5rem; line-height: 1.1; }
+        .hero p { font-size: 1.25rem; color: var(--color-text-muted); max-width: 700px; margin: 0 auto 2rem; }
+        .hero .accent { color: var(--color-primary); }
+
+        .section-title { font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 3rem; position: relative; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: var(--color-primary); margin-top: 0.5rem; }
+
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; padding-bottom: 5rem; }
+        .project-card { 
+            background: var(--color-surface); 
+            border: 1px solid var(--color-border); 
+            border-radius: 12px; 
+            overflow: hidden; 
+            transition: transform 0.3s, border-color 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+        .project-card:hover { transform: translateY(-5px); border-color: var(--color-primary); }
+        .project-img { width: 100%; height: 200px; background: #1a1f1a; object-fit: cover; }
+        .project-info { padding: 1.5rem; }
+        .project-info h3 { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .project-info p { color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1rem; }
+        .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .tag { background: var(--color-primary-glow); color: var(--color-primary); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+
+        .about { padding: 5rem 0; background: var(--color-surface); }
+        .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .about-text p { margin-bottom: 1.5rem; color: var(--color-text-muted); }
+
+        .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        .skill-item { background: var(--color-bg); padding: 1rem; border-radius: 8px; border: 1px solid var(--color-border); }
+
+        .contact { padding: 8rem 0; text-align: center; }
+        .contact h2 { font-size: 3rem; margin-bottom: 2rem; }
+        .contact-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+        .contact-btn { 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 0.75rem;
+            padding: 1rem 2rem; 
+            background: var(--color-primary); 
+            color: var(--color-bg); 
+            text-decoration: none; 
+            font-weight: 700; 
+            border-radius: 8px;
+            transition: opacity 0.3s;
+        }
+        .contact-btn:hover { opacity: 0.9; }
+
+        footer { padding: 4rem 0; border-top: 1px solid var(--color-border); text-align: center; color: var(--color-text-muted); font-size: 0.9rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .about-content { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a href="#top" class="brand" aria-label="Jacob Blackburn home">
-        <div class="brand-mark">S</div>
-        <div class="brand-copy">
-          <span>Jacob Blackburn | Squatch</span>
-          <span class="muted">Gameplay Programmer & Game Developer</span>
-        </div>
-      </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow">Option A — Dark & Technical</div>
-          <h1>Building gameplay systems with code-first thinking.</h1>
-          <p>
-            I'm Jacob Blackburn — Squatch — a gameplay programmer and game developer focused on C++, Unreal Engine, AI systems, and technical game architecture. My portfolio combines shipped class projects, low-level engine work, and active in-development systems built with a programmer's mindset.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-secondary" href="#contact">Contact Me</a>
-          </div>
-        </div>
-        <aside class="hero-panel" aria-label="Technical summary">
-          <div class="terminal" aria-hidden="true">
-            <div class="comment">// current focus</div>
-            <div class="line">stack = ["C++", "Unreal Engine 5", "Gameplay Systems"];</div>
-            <div class="line">recentWork = ["AI behaviors", "HUD/UI", "weapons", "portfolio build"];</div>
-            <div class="line">goal = "Junior Gameplay Programmer";</div>
-          </div>
-          <div class="stat-grid">
-            <div class="stat"><strong>6</strong><span>Portfolio projects prepared</span></div>
-            <div class="stat"><strong>C++</strong><span>Primary programming language</span></div>
-            <div class="stat"><strong>UE5</strong><span>Gameplay and AI systems focus</span></div>
-            <div class="stat"><strong>squatchworks.dev</strong><span>Planned personal domain</span></div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="eyebrow">Selected Work</div>
-            <h2>Projects built around systems, iteration, and problem solving.</h2>
-          </div>
-          <p>
-            These projects show a mix of solo development, technical foundations, team collaboration, and live deployment work. Screenshots and clips can be added later without changing the layout.
-          </p>
-        </div>
-
-        <div class="project-grid">
-          <article class="card featured">
-            <div>
-              <div class="card-top">
-                <div>
-                  <span class="badge">Featured</span>
-                  <h3>Arachnivasion</h3>
-                </div>
-                <span class="eyebrow">C++ · Vulkan · Python</span>
-              </div>
-              <p>
-                A 3D Space Invaders reimagining built from the ground up with Vulkan and EnTT. My work included shooting mechanics, wave logic, collision-related systems, and a live leaderboard stack deployed through a Flask API and PostgreSQL.
-              </p>
-              <div class="tags">
-                <span>Gameplay Programming</span><span>Spawn Systems</span><span>Leaderboard API</span><span>Team Capstone</span>
-              </div>
-            </div>
-            <div class="code-block">GET /highscores
-POST /submit
-
-spawnSpiderWave();
-createProjectile();
-submitScore(initials, score);</div>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <div>
-                <span class="badge">Unity Team Project</span>
-                <h3>Veggie Town Massacre</h3>
-              </div>
-            </div>
-            <p>
-              A Unity wave shooter where I handled level design, multiple enemy AI behaviors, poison gas systems, UI polish, balancing, installer creation, and several late-stage QA fixes.
-            </p>
-            <div class="tags"><span>Unity</span><span>C#</span><span>Enemy AI</span><span>Level Design</span></div>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <div>
-                <span class="badge">Solo Foundation</span>
-                <h3>Vulkan ECS Engine Prototype</h3>
-              </div>
-            </div>
-            <p>
-              The solo engine prototype that later became the base for Arachnivasion. This project highlights direct Vulkan rendering, EnTT ECS architecture, and modular gameplay code organization.
-            </p>
-            <div class="tags"><span>Vulkan</span><span>EnTT</span><span>Engine Architecture</span><span>CMake</span></div>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <div>
-                <span class="badge">Desktop App</span>
-                <h3>Conway's Game of Life</h3>
-              </div>
-            </div>
-            <p>
-              A full C++ implementation with a custom GUI, simulation controls, toroidal mode, settings persistence, and real-time grid interaction.
-            </p>
-            <div class="tags"><span>C++</span><span>wxWidgets</span><span>GUI</span><span>Simulation</span></div>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <div>
-                <span class="badge">Arcade Project</span>
-                <h3>Bricks Breaker</h3>
-              </div>
-            </div>
-            <p>
-              A console-rendered C++ brick breaker focused on collision detection, real-time loops, object-oriented design, and core arcade gameplay structure.
-            </p>
-            <div class="tags"><span>C++</span><span>Collision</span><span>Game Loop</span><span>Console Rendering</span></div>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <div>
-                <span class="badge">In Development</span>
-                <h3>Cryptid Tracker — Mobile</h3>
-              </div>
-            </div>
-            <p>
-              A design-first mobile project currently in development. The current package includes the GDD, scene flow planning, and the main gameplay scene foundation.
-            </p>
-            <div class="tags"><span>Unity</span><span>Mobile</span><span>GDD</span><span>UX Planning</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container two-col">
-        <div class="mini-card">
-          <div class="eyebrow">Technical Skill Set</div>
-          <h2 style="margin-top:1rem;">The tools and systems I keep coming back to.</h2>
-          <div class="skill-list" style="margin-top:1.5rem;">
-            <div class="skill-line"><span>C++ / Object-Oriented Design</span><span>Gameplay systems, game loops, low-level architecture</span></div>
-            <div class="skill-line"><span>Unreal Engine 5</span><span>Gameplay framework, AI, Blueprints + C++ workflows</span></div>
-            <div class="skill-line"><span>AI & Game Systems</span><span>Behavior logic, enemy design, combat support systems</span></div>
-            <div class="skill-line"><span>UI / HUD Implementation</span><span>Game-facing interfaces and player feedback loops</span></div>
-            <div class="skill-line"><span>Version Control</span><span>GitHub, repo organization, team branch workflows</span></div>
-            <div class="skill-line"><span>Technical Problem Solving</span><span>Debugging, iteration, and system refinement</span></div>
-          </div>
-        </div>
-        <div class="mini-card" id="about">
-          <div class="eyebrow">About Me</div>
-          <h2 style="margin-top:1rem;">Technical by default. Creative by choice.</h2>
-          <p style="margin-top:1.25rem; color: var(--color-text-muted);">
-            I'm finishing my game development degree and building a portfolio around gameplay programming, AI behaviors, systems work, and practical technical development. I like projects that make me solve real implementation problems — whether that's debugging combat logic, structuring a clean gameplay system, or getting a deployed service working with the game.
-          </p>
-          <p style="margin-top:1rem; color: var(--color-text-muted);">
-            Outside of class projects, I also spend time building independent game ideas, refining workflows, and sharpening the kind of technical foundation that translates well into junior gameplay programmer roles.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container two-col">
-        <div class="timeline">
-          <div class="eyebrow">Current Focus</div>
-          <h2 style="margin-top:1rem;">What I'm actively building toward.</h2>
-          <div style="margin-top:1.25rem;">
-            <div class="timeline-item"><strong>Degree Completion</strong><span>Final portfolio prep, documentation, and presentation polish</span></div>
-            <div class="timeline-item"><strong>Gameplay Programming Roles</strong><span>Targeting junior opportunities where systems and problem solving matter</span></div>
-            <div class="timeline-item"><strong>Portfolio Refinement</strong><span>Adding visuals, clips, polished case studies, and live links</span></div>
-            <div class="timeline-item"><strong>Independent Development</strong><span>Continuing Cryptid Tracker and future personal game systems work</span></div>
-          </div>
-        </div>
-        <div class="contact-card" id="contact">
-          <div class="eyebrow">Contact</div>
-          <h2 style="margin-top:1rem;">Let's talk about gameplay, systems, and next steps.</h2>
-          <p style="margin-top:1.25rem;">
-            This portfolio is set up to grow as more visuals, clips, and polished case study content are added. The structure is ready now, and the content can keep improving without a redesign.
-          </p>
-          <div class="contact-list" style="margin-top:1.5rem;">
-            <a href="https://github.com/DrSakSquatch69" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>View profile ↗</span></a>
-            <a href="mailto:your-email@example.com"><span>Email</span><span>Replace with your professional email</span></a>
-            <a href="https://github.com/DrSakSquatch69/DrSakSquatch69.github.io" target="_blank" rel="noopener noreferrer"><span>Portfolio Repository</span><span>Open repo ↗</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
     <div class="container">
-      Jacob Blackburn | Squatch — Gameplay Programmer & Game Developer · Built for squatchworks.dev
+        <header>
+            <nav>
+                <div class="logo">SQUATCHWORKS.DEV</div>
+                <div class="nav-links">
+                    <a href="#projects">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>Jacob Blackburn | <span class="accent">Squatch</span></h1>
+            <p>Somewhere between the code and the cryptids, great games get made. Gameplay Programmer & Developer dedicated to building robust systems and immersive experiences.</p>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Arachnivasion -->
+                <a href="Projects/Arachnivasion" class="project-card">
+                    <img src="Projects/Arachnivasion/Visuals/Gameplay.png" alt="Arachnivasion" class="project-img">
+                    <div class="project-info">
+                        <h3>Arachnivasion</h3>
+                        <p>3D Space Invaders reimagining built with Vulkan. Features a custom Flask backend for global leaderboards.</p>
+                        <div class="tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Vulkan</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Veggie Town Massacre -->
+                <a href="Projects/Veggie Town Massacre" class="project-card">
+                    <img src="Assets/Screenshots/vtm.png" alt="Veggie Town Massacre" class="project-img">
+                    <div class="project-info">
+                        <h3>Veggie Town Massacre</h3>
+                        <p>Unity team project. Owned AI systems, level design, and UI architecture for this chaotic wave shooter.</p>
+                        <div class="tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Game of Life -->
+                <a href="Projects/GameOfLife" class="project-card">
+                    <img src="Assets/Screenshots/gol.png" alt="Game of Life" class="project-img">
+                    <div class="project-info">
+                        <h3>Game of Life</h3>
+                        <p>Complete C++ implementation of Conway's cellular automaton with custom GUI and file persistence.</p>
+                        <div class="tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">GUI</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Bricks Breaker -->
+                <a href="Projects/BricksBreaker" class="project-card">
+                    <img src="Projects/BricksBreaker/Visuals/Gameplay.png" alt="Bricks Breaker" class="project-img">
+                    <div class="project-info">
+                        <h3>Bricks Breaker</h3>
+                        <p>Standard arcade implementation in C++ focused on clean OOP and collision mathematics.</p>
+                        <div class="tags">
+                            <span class="tag">C++</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Dev4 -->
+                <a href="Projects/Dev4 unnamed project" class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Vulkan Engine Base</h3>
+                        <p>Core solo engine prototype utilizing EnTT ECS. Served as the foundation for future team projects.</p>
+                        <div class="tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Vulkan</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Cryptid Tracker -->
+                <a href="Projects/Cryptid-tracker-mobile" class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Cryptid Tracker (In-Dev)</h3>
+                        <p>Mobile utility app for tracking cryptid sightings. Focused on UX and system design.</p>
+                        <div class="tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">Design</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
     </div>
-  </footer>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p>I am a single father to two boys, driven by the goal of providing them the best possible life. My oldest is already following in my footsteps, aspiring to be a streamer and gamer.</p>
+                    <p>I've played games my entire life and transitioned into development to master the systems behind them. I have a deep passion for fringe science and cryptozoology, which often influences my creative direction.</p>
+                    <p>One day, I plan to own my own game development studio, Squatchworks, where we build games that are as technical as they are imaginative.</p>
+                </div>
+                <div class="skills">
+                    <h3 style="margin-bottom: 1.5rem; font-family: var(--font-display);">Tech Stack</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">C++ / OOP</div>
+                        <div class="skill-item">Unreal Engine 5</div>
+                        <div class="skill-item">Unity / C#</div>
+                        <div class="skill-item">Vulkan API</div>
+                        <div class="skill-item">AI Systems</div>
+                        <div class="skill-item">Version Control</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="contact" class="contact">
+            <h2 class="section-title" style="margin-bottom: 1rem;">Let's Build</h2>
+            <p style="margin-bottom: 3rem; color: var(--color-text-muted);">Open for collaboration and junior gameplay programming roles.</p>
+            <div class="contact-links">
+                <a href="mailto:JDBlackburn.Developer@outlook.com" class="contact-btn">Email Me</a>
+                <a href="https://www.linkedin.com/in/jacob-blackburn-77b30432b" class="contact-btn">LinkedIn</a>
+                <div style="padding: 1rem; border: 1px solid var(--color-border); border-radius: 8px;">
+                    <span style="color: var(--color-primary); font-weight: bold;">Discord:</span> drsacksquatch69
+                </div>
+            </div>
+            <p style="margin-top: 2rem; color: var(--color-text-muted);">Phone: 937-722-1922</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 Jacob Blackburn. All rights reserved. Built with code, coffee, and a little bit of mystery.
+        </div>
+    </footer>
 </body>
 </html>
