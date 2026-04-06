@@ -3,6 +3,8 @@
 x64/
 Debug/
 Release/
+out/
+build/
 
 # Build artifacts
 *.exe
@@ -14,9 +16,18 @@ Release/
 *.ipdb
 *.iobj
 *.tlog
+*.cso
 
 # User files
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Vulkan compiled shaders
+*.spv
