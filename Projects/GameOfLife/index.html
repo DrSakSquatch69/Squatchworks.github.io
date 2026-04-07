@@ -4,30 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conway's Game of Life - Squatchworks</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-    <header>
-        <h1>Conway's Game of Life</h1>
-        <nav>
-            <a href="../../index.html">Back to Portfolio</a>
-        </nav>
-    </header>
-    <main>
-        <section id="project-overview">
-            <h2>Project Overview</h2>
-            <p>A C++ implementation of Conway's Game of Life, developed as part of my Game Development coursework at Full Sail University.</p>
-        </section>
-        <section id="visuals">
-            <h2>Visuals</h2>
-            <p>Visuals coming soon.</p>
-        </section>
-        <section id="repo-link">
-            <a href="https://github.com/DrSakSquatch69/GameOfLife" target="_blank">View Repository on GitHub</a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Jacob Blackburn</p>
-    </footer>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">SQUATCHWORKS.DEV</div>
+                <div class="nav-links">
+                    <a href="../../index.html">Back to Portfolio</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Conway's <span class="accent">Game of Life</span></h1>
+                <div class="meta">
+                    <span class="tag">C++</span>
+                    <span class="tag">Coursework</span>
+                    <span class="tag">Simulation</span>
+                    <span class="tag">Solo Project</span>
+                </div>
+                <div class="hero-img-placeholder">Visuals Coming Soon</div>
+            </section>
+
+            <div class="content">
+                <div class="prose">
+                    <h2 class="section-title">Project Overview</h2>
+                    <p>A C++ implementation of Conway's Game of Life, developed as part of my Game Development coursework at Full Sail University. This project focuses on the core logic of cellular automata, grid management, and efficient state updates within a console-based or simple graphical environment.</p>
+                    
+                    <h2 class="section-title" style="margin-top: 2.5rem;">Features</h2>
+                    <ul>
+                        <li><strong>Grid Logic</strong> — Implementation of the four standard Game of Life rules for cell survival and birth.</li>
+                        <li><strong>Dynamic Grid</strong> — Support for configurable grid dimensions.</li>
+                        <li><strong>Simulation Loop</strong> — Automated generation updates with controllable speed.</li>
+                        <li><strong>C++ Fundamentals</strong> — Clean use of memory management, loops, and conditional logic.</li>
+                    </ul>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="info-card">
+                        <h3>Project Info</h3>
+                        <div class="info-row">
+                            <div class="info-item">
+                                <label>Role</label>
+                                <span>Solo Developer</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Language</label>
+                                <span>C++</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Type</label>
+                                <span>Academic Project</span>
+                            </div>
+                            <div class="info-item">
+                                <label>School</label>
+                                <span>Full Sail University</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Year</label>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://github.com/DrSakSquatch69/Squatchworks.github.io/tree/main/Projects/GameOfLife" class="github-btn" target="_blank">View on GitHub</a>
+                </aside>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                © 2026 Jacob Blackburn. Conway's Game of Life Project.
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
