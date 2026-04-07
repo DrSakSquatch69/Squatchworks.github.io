@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jacob Blackburn | Squatch — Gameplay Programmer & Game Developer</title>
     <meta name="description" content="Portfolio of Jacob Blackburn, a gameplay programmer and developer focused on C++, Unreal Engine, and innovative game systems." />
-
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://api.fontshare.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +24,9 @@
             --font-main: 'Satoshi', sans-serif;
             --font-display: 'Cabinet Grotesk', sans-serif;
         }
+
         * { box-sizing: border-box; margin: 0; padding: 0; }
+
         body { 
             background-color: var(--color-bg); 
             color: var(--color-text); 
@@ -32,6 +34,7 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
+
         .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
 
         header { padding: 2rem 0; border-bottom: 1px solid var(--color-border); }
@@ -39,12 +42,15 @@
         .logo { font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; color: var(--color-primary); }
         .nav-links a { color: var(--color-text-muted); text-decoration: none; margin-left: 2rem; font-weight: 500; transition: color 0.3s; }
         .nav-links a:hover { color: var(--color-primary); }
+
         .hero { padding: 8rem 0; text-align: center; }
         .hero h1 { font-family: var(--font-display); font-size: 4rem; margin-bottom: 1.5rem; line-height: 1.1; }
         .hero p { font-size: 1.25rem; color: var(--color-text-muted); max-width: 700px; margin: 0 auto 2rem; }
         .hero .accent { color: var(--color-primary); }
+
         .section-title { font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 3rem; position: relative; }
         .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: var(--color-primary); margin-top: 0.5rem; }
+
         .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; padding-bottom: 5rem; }
         .project-card { 
             background: var(--color-surface); 
@@ -56,6 +62,7 @@
             color: inherit;
         }
         .project-card:hover { transform: translateY(-5px); border-color: var(--color-primary); }
+        
         .project-img-container { width: 100%; height: 200px; background: #1a1f1a; position: relative; }
         .project-img { width: 100%; height: 100%; object-fit: cover; }
         .project-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: var(--color-border); font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
@@ -63,13 +70,17 @@
         .project-info { padding: 1.5rem; }
         .project-info h3 { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem; }
         .project-info p { color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1rem; height: 3.8em; overflow: hidden; }
+
         .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
         .tag { background: var(--color-primary-glow); color: var(--color-primary); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+
         .about { padding: 5rem 0; background: var(--color-surface); }
         .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
         .about-text p { margin-bottom: 1.5rem; color: var(--color-text-muted); }
+
         .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
         .skill-item { background: var(--color-bg); padding: 1rem; border-radius: 8px; border: 1px solid var(--color-border); }
+
         .contact { padding: 8rem 0; text-align: center; }
         .contact h2 { font-size: 3rem; margin-bottom: 2rem; }
         .contact-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
@@ -86,7 +97,9 @@
             transition: opacity 0.3s;
         }
         .contact-btn:hover { opacity: 0.9; }
+
         footer { padding: 4rem 0; border-top: 1px solid var(--color-border); text-align: center; color: var(--color-text-muted); font-size: 0.9rem; }
+
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
             .about-content { grid-template-columns: 1fr; }
@@ -94,6 +107,7 @@
     </style>
 </head>
 <body>
+
     <div class="container">
         <header>
             <nav>
@@ -101,6 +115,7 @@
                 <div class="nav-links">
                     <a href="#projects">Projects</a>
                     <a href="#about">About</a>
+                    <a href="Resume.html">Resume</a>
                     <a href="#contact">Contact</a>
                 </div>
             </nav>
@@ -114,6 +129,7 @@
         <section id="projects">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
+                
                 <!-- Arachnivasion -->
                 <a href="Projects/Arachnivasion" class="project-card">
                     <div class="project-img-container">
@@ -121,7 +137,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Arachnivasion</h3>
-                        <p>3D Space Invaders reimagining built with Vulkan. Features a custom Flask backend for global leaderboards.</p>
+                        <p>Vulkan-based 3D wave shooter with custom ECS. I implemented core player mechanics and a global leaderboard API across 4 development sprints.</p>
                         <div class="tags">
                             <span class="tag">C++</span>
                             <span class="tag">Vulkan</span>
@@ -137,7 +153,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Veggie Town Massacre</h3>
-                        <p>Unity team project. Owned AI systems, level design, and UI architecture for this chaotic wave shooter.</p>
+                        <p>Unity wave shooter. Owned AI systems, level design, and UI architecture for this chaotic team project.</p>
                         <div class="tags">
                             <span class="tag">Unity</span>
                             <span class="tag">C#</span>
@@ -167,7 +183,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Bricks Breaker</h3>
-                        <p>Standard arcade implementation in C++ focused on clean OOP and collision mathematics.</p>
+                        <p>Solo academic project implementing classic arcade mechanics in C++. Focused on collision math and clean OOP.</p>
                         <div class="tags">
                             <span class="tag">C++</span>
                         </div>
@@ -181,7 +197,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Vulkan Engine Base</h3>
-                        <p>Core solo engine prototype utilizing EnTT ECS. Served as the foundation for future team projects.</p>
+                        <p>Core solo engine prototype utilizing EnTT ECS. Served as the foundation for future team projects like Arachnivasion.</p>
                         <div class="tags">
                             <span class="tag">C++</span>
                             <span class="tag">Vulkan</span>
@@ -203,6 +219,7 @@
                         </div>
                     </div>
                 </a>
+
             </div>
         </section>
     </div>
@@ -214,12 +231,14 @@
                     <h2 class="section-title">About Me</h2>
                     <p>I am a single father to two boys, driven by the goal of providing them the best possible life. My oldest is already following in my footsteps, aspiring to be a streamer and gamer.</p>
                     <p>I've played games my entire life and transitioned into development to master the systems behind them. I have a deep passion for fringe science and cryptozoology, which often influences my creative direction.</p>
+                    
                     <div style="margin-top: 2rem; padding: 1.5rem; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 12px;">
                         <h3 style="color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-display);">Education</h3>
                         <p style="margin-bottom: 0.25rem; color: var(--color-text); font-weight: bold;">Bachelor of Science in Game Development</p>
                         <p style="margin-bottom: 0.5rem; font-size: 0.9rem;">Full Sail University</p>
                         <p style="color: var(--color-primary); font-weight: 600; font-size: 0.85rem;">Expected Graduation: July 2026</p>
                     </div>
+                    
                     <p style="margin-top: 1.5rem;">One day, I plan to own my own game development studio, Squatchworks, where we build games that are as technical as they are imaginative.</p>
                 </div>
                 <div class="skills">
@@ -230,7 +249,7 @@
                         <div class="skill-item">Unity / C#</div>
                         <div class="skill-item">Vulkan API</div>
                         <div class="skill-item">AI Systems</div>
-                        <div class="skill-item">Version Control</div>Update email and LinkedIn links to professional Squatchworks handles
+                        <div class="skill-item">Version Control</div>
                     </div>
                 </div>
             </div>
@@ -241,11 +260,12 @@
         <section id="contact" class="contact">
             <h2 class="section-title" style="margin-bottom: 1rem;">Let's Build</h2>
             <p style="margin-bottom: 3rem; color: var(--color-text-muted);">Open for collaboration and junior gameplay programming roles.</p>
+            
             <div class="contact-links">
                 <a href="mailto:JDBlackburn.developer@outlook.com" class="contact-btn">Email Me</a>
                 <a href="https://www.linkedin.com/in/squatchworks" class="contact-btn">LinkedIn</a>
                 <div style="padding: 1rem; border: 1px solid var(--color-border); border-radius: 8px;">
-                    <span style="color: var(--color-primary); font-weight: bold;">Discord:</span> drsacksquatch69<br>
+                    <span style="color: var(--color-primary); font-weight: bold;">Discord:</span> drsacksquatch69<br><br>
                     <a href="https://discord.gg/kbwPjFEXss" class="contact-btn" style="margin-top:0.75rem; background: #5865F2;">Join Squatch & Goat Gaming</a>
                 </div>
             </div>
@@ -258,5 +278,6 @@
             © 2026 Jacob Blackburn. All rights reserved. Built with code, coffee, and a little bit of mystery.
         </div>
     </footer>
+
 </body>
 </html>
