@@ -415,7 +415,7 @@ void MainWindow::OnOpenClick(wxCommandEvent& OpenClicked)
 			{
 				if (buffer[i] == '*')
 				{
-					mGameBoard[i][index] = true;
+					mGameBoard[index][i] = true;
 				}
 				else
 				{
