@@ -1,79 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bricks Breaker - Squatchworks</title>
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://api.fontshare.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="../../style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bricks Breaker | Jacob Blackburn</title>
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <nav>
-                <div class="logo">SQUATCHWORKS.DEV</div>
-                <div class="nav-links">
-                    <a href="../../index.html">Back to Portfolio</a>
-                </div>
-            </nav>
-        </header>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="logo">SQUATCHWORKS.DEV</div>
+        <div class="nav-links">
+          <a href="../../index.html">Back to Portfolio</a>
+        </div>
+      </nav>
+    </header>
 
-        <main>
-            <section class="hero">
-                <h1>Bricks Breaker <span class="accent">Arcade Classic</span></h1>
-                <p>A solo academic project implementing classic arcade mechanics in C++, focused on collision math and object-oriented design.</p>
-            </section>
+    <main>
+      <section class="hero" style="text-align:left; padding: 5rem 0 3rem;">
+        <h1>Bricks <span class="accent">Breaker</span></h1>
+        <div class="tags" style="margin-bottom: 2rem;">
+          <span class="tag">C++</span>
+          <span class="tag">Windows API</span>
+          <span class="tag">2D Physics</span>
+          <span class="tag">OOP</span>
+          <span class="tag">Solo Project</span>
+        </div>
+        <div class="hero-img-placeholder">Bricks Breaker Gameplay</div>
+      </section>
 
-            <section id="project-details">
-                <h2 class="section-title">Project Overview</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Bricks Breaker is a faithful recreation of the classic brick-breaking formula. Built using the Windows API for rendering, the project served as a deep dive into 2D collision physics, paddle movement logic, and level state management.</p>
-                        <p>The codebase emphasizes clean OOP principles and efficient memory management within a constrained environment.</p>
-                    </div>
-                    <div class="skills">
-                        <h3 style="margin-bottom: 1.5rem; font-family: var(--font-display);">Tech Stack</h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">C++</div>
-                            <div class="skill-item">Windows API</div>
-                            <div class="skill-item">2D Physics</div>
-                            <div class="skill-item">OOP</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="visuals" style="margin-top: 5rem;">
-                <h2 class="section-title">Gameplay Visuals</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-img-container" style="height: auto;">
-                            <img src="Visuals/Gameplay.png" alt="Bricks Breaker Gameplay" class="project-img">
-                        </div>
-                        <div class="project-info">
-                            <h3>Level 1 Action</h3>
-                            <p>Demonstrating ball physics and brick destruction logic.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="contact">
-                <a href="https://github.com/DrSakSquatch69/BricksBreaker" class="contact-btn" target="_blank">View Repository</a>
-            </section>
-        </main>
-
-        <footer>
-            <div class="container">
-                © 2026 Jacob Blackburn. Bricks Breaker Project.
+      <div class="project-layout">
+        <div class="project-main">
+          <section class="project-section">
+            <h2 class="section-title">About</h2>
+            <div class="prose">
+              <p>Bricks Breaker is a faithful recreation of the classic brick-breaking formula. Built using the Windows API for rendering, the project served as a deep dive into 2D collision physics, paddle movement logic, and level state management.</p>
+              <p>The codebase emphasizes clean OOP principles and efficient memory management within a constrained environment, with no external game engine or framework.</p>
             </div>
-        </footer>
-    </div>
+          </section>
+
+          <section class="project-section">
+            <h2 class="section-title">My Contributions</h2>
+            <div class="prose">
+              <ul>
+                <li>Designed and implemented the core ball physics system including velocity, angle reflection, and edge-case collision handling</li>
+                <li>Built the paddle movement and input handling system using Windows API keyboard events</li>
+                <li>Created the brick grid system with configurable layouts and destruction logic</li>
+                <li>Implemented game state management — start screen, active play, win/loss conditions, and restart flow</li>
+                <li>Applied OOP design principles with clean class separation for Ball, Paddle, Brick, and Game Manager entities</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="project-section">
+            <h2 class="section-title">Features</h2>
+            <div class="prose">
+              <ul>
+                <li><strong>Ball Physics</strong> — Angle-based reflection off paddle, walls, and bricks with accurate collision response</li>
+                <li><strong>Paddle Control</strong> — Smooth keyboard-driven paddle movement with boundary clamping</li>
+                <li><strong>Brick Grid</strong> — Multi-row brick layout with per-brick destruction and score tracking</li>
+                <li><strong>Win / Loss States</strong> — Full game loop with clear state transitions and restart support</li>
+                <li><strong>Windows API Rendering</strong> — Direct GDI rendering without any engine abstraction</li>
+                <li><strong>OOP Architecture</strong> — Clean class design separating game entities and responsibilities</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <aside class="project-sidebar">
+          <div class="info-card">
+            <h3>Project Info</h3>
+            <div class="info-row">
+              <div class="info-item">
+                <label>Role</label>
+                <span>Solo Developer</span>
+              </div>
+              <div class="info-item">
+                <label>Type</label>
+                <span>Academic Project</span>
+              </div>
+              <div class="info-item">
+                <label>Language</label>
+                <span>C++</span>
+              </div>
+              <div class="info-item">
+                <label>Renderer</label>
+                <span>Windows API / GDI</span>
+              </div>
+              <div class="info-item">
+                <label>School</label>
+                <span>Full Sail University</span>
+              </div>
+              <div class="info-item">
+                <label>Year</label>
+                <span>2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="info-card">
+            <h3>Tech Stack</h3>
+            <div class="info-row">
+              <div class="info-item">
+                <label>Language</label>
+                <span>C++</span>
+              </div>
+              <div class="info-item">
+                <label>API</label>
+                <span>Windows API / GDI</span>
+              </div>
+              <div class="info-item">
+                <label>Paradigm</label>
+                <span>Object-Oriented</span>
+              </div>
+            </div>
+          </div>
+          <a href="https://github.com/DrSakSquatch69/BricksBreaker" class="github-btn" target="_blank">View Source on GitHub</a>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Jacob Blackburn. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
