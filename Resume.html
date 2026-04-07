@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Blackburn Resume | Gameplay Programmer</title>
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #ffffff;
+            --color-sidebar: #0b0d0b;
+            --color-primary: #4ade80;
+            --color-text: #1a1a1a;
+            --color-text-light: #64748b;
+            --font-main: 'Satoshi', sans-serif;
+            --font-display: 'Cabinet Grotesk', sans-serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            background: #f1f5f9;
+            font-family: var(--font-main);
+            color: var(--color-text);
+            line-height: 1.5;
+            padding: 40px 0;
+        }
+        .resume-page {
+            background: var(--color-bg);
+            width: 850px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 1100px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            background: var(--color-sidebar);
+            color: #ffffff;
+            padding: 40px 30px;
+        }
+        .sidebar h2 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 0.5rem;
+        }
+        .contact-item { margin-bottom: 1.25rem; font-size: 0.85rem; }
+        .contact-item span { display: block; color: var(--color-primary); font-weight: bold; margin-bottom: 2px; }
+        .contact-item a { color: inherit; text-decoration: none; }
+        
+        .skill-group { margin-bottom: 2rem; }
+        .skill-item { 
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        /* Main Content */
+        .main-content { padding: 50px 40px; }
+        .header { margin-bottom: 3rem; }
+        .header h1 { 
+            font-family: var(--font-display);
+            font-size: 3rem;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .header .title {
+            font-size: 1.25rem;
+            color: var(--color-primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background: #000;
+            display: inline-block;
+            padding: 2px 10px;
+        }
+        
+        .section { margin-bottom: 2.5rem; }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: #e2e8f0;
+        }
+        
+        .project { margin-bottom: 1.5rem; }
+        .project-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.25rem; }
+        .project-name { font-weight: 700; font-size: 1.1rem; }
+        .project-tech { font-size: 0.8rem; color: var(--color-text-light); font-style: italic; }
+        .project ul { margin-left: 1.25rem; font-size: 0.9rem; color: #334155; }
+        
+        .summary-p { font-size: 1rem; color: #334155; margin-bottom: 1rem; }
+        
+        @media print {
+            body { padding: 0; background: none; }
+            .resume-page { box-shadow: none; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-page">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <div class="contact-item">
+                    <span>Location</span> Russells Point, Ohio
+                </div>
+                <div class="contact-item">
+                    <span>Email</span> <a href="mailto:JDBlackburn.developer@outlook.com">JDBlackburn.developer@outlook.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>Phone</span> 937-722-1922
+                </div>
+                <div class="contact-item">
+                    <span>Portfolio</span> <a href="https://squatchworks.github.io">squatchworks.github.io</a>
+                </div>
+                <div class="contact-item">
+                    <span>LinkedIn</span> <a href="https://www.linkedin.com/in/squatchworks">in/squatchworks</a>
+                </div>
+            </div>
+
+            <div class="skills-sidebar" style="margin-top: 3rem;">
+                <h2>Expertise</h2>
+                <div class="skill-group">
+                    <div class="skill-item">C++ / OOP</div>
+                    <div class="skill-item">Unreal Engine 5</div>
+                    <div class="skill-item">Unity / C#</div>
+                    <div class="skill-item">Vulkan API</div>
+                    <div class="skill-item">EnTT ECS</div>
+                    <div class="skill-item">AI Systems</div>
+                    <div class="skill-item">Version Control</div>
+                </div>
+                
+                <h2>Education</h2>
+                <p style="font-weight: bold; font-size: 0.9rem;">Full Sail University</p>
+                <p style="font-size: 0.8rem; margin-bottom: 0.25rem;">B.S. Game Development</p>
+                <p style="color: var(--color-primary); font-size: 0.75rem; font-weight: bold;">Expected July 2026</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>JACOB<br>BLACKBURN</h1>
+                <div class="title">Gameplay Programmer</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Summary</h2>
+                <p class="summary-p">
+                    Detail-oriented Gameplay Programmer nearing completion of a Bachelor of Science in Game Development. 
+                    Specialized in building high-performance systems and AI architectures using C++ and modern APIs. 
+                    Driven by technical problem-solving and the goal of creating immersive player experiences.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <div class="project">
+                    <div class="project-header">
+                        <span class="project-name">Arachnivasion</span>
+                        <span class="project-tech">C++ | Vulkan | Python</span>
+                    </div>
+                    <ul>
+                        <li>Developed a 3D Space Invaders reimagining utilizing the Vulkan API.</li>
+                        <li>Implemented a custom Flask backend to handle global leaderboard data.</li>
+                        <li>Optimized rendering pipelines for consistent high-frame-rate performance.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="project-name">Veggie Town Massacre</span>
+                        <span class="project-tech">Unity | C#</span>
+                    </div>
+                    <ul>
+                        <li>Architected scalable AI behavior systems and UI frameworks for a wave-based shooter.</li>
+                        <li>Collaborated in a team environment to balance gameplay mechanics and level flow.</li>
+                        <li>Engineered weapon systems and enemy spawning logic.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="project-name">Vulkan Engine Base (Dev4)</span>
+                        <span class="project-tech">C++ | EnTT ECS</span>
+                    </div>
+                    <ul>
+                        <li>Built a solo engine foundation leveraging Entity Component System architecture.</li>
+                        <li>Focused on high-performance memory management and decoupled system design.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="project-name">Game of Life</span>
+                        <span class="project-tech">C++ | Custom GUI</span>
+                    </div>
+                    <ul>
+                        <li>Programmed a complete cellular automaton with custom pattern-saving functionality.</li>
+                        <li>Optimized grid update logic for large-scale simulations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Personal Mission</h2>
+                <p class="summary-p" style="font-style: italic; color: var(--color-text-light);">
+                    To lead the next wave of technical game design through my studio, Squatchworks, 
+                    creating games that bridge the gap between complex systems and imaginative storytelling.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Professional Print/Save Instructions (Only visible on web) -->
+    <div style="text-align: center; margin-top: 2rem; color: #64748b; font-size: 0.8rem;" class="no-print">
+        Tip: Press Ctrl + P to Save as PDF
+    </div>
+</body>
+</html>
