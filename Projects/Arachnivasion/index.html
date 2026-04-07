@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arachnivasion | Jacob Blackburn</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style.css" />
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">SQUATCHWORKS.DEV</div>
+                <div class="nav-links">
+                    <a href="../../index.html">Back to Portfolio</a>
+                </div>
+            </nav>
+        </header>
 
+        <main>
+            <section class="hero" style="text-align:left; padding: 5rem 0 3rem;">
+                <h1>Arachni<span class="accent">vasion</span></h1>
+                <div class="tags" style="margin-bottom: 2rem;">
+                    <span class="tag">C++</span>
+                    <span class="tag">Vulkan</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">EnTT ECS</span>
+                    <span class="tag">Team Project</span>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div style="flex: 2; min-width: 300px;">
+                        <img src="Visuals/Gameplay.png" alt="Arachnivasion Gameplay" style="width: 100%; border-radius: 8px; border: 1px solid #1a1a1a;" />
+                        <p style="text-align:center; font-size: 0.75rem; color: #666; margin-top: 0.5rem;">GAMEPLAY</p>
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <img src="Visuals/TitleScreen.png" alt="Arachnivasion Title Screen" style="width: 100%; border-radius: 8px; border: 1px solid #1a1a1a;" />
+                        <p style="text-align:center; font-size: 0.75rem; color: #666; margin-top: 0.5rem;">TITLE SCREEN</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="project-layout">
+                <div class="project-main">
+                    <section class="project-section">
+                        <h2 class="section-title">About</h2>
+                        <div class="prose">
+                            <p>Arachnivasion is a Space Invaders reimagining built from the ground up using Vulkan and the EnTT Entity Component System — no engine, no abstraction layer. The team reinterpreted the classic arcade formula in 3D with spider enemies, a player-controlled turret, and a live global leaderboard backed by a deployed Python/Flask API with PostgreSQL.</p>
+                            <p>This was a capstone team project where each member first built the shared engine foundation solo, then merged into a collaborative repo to build the full game across multiple development sprints.</p>
+                        </div>
+                    </section>
+
+                    <section class="project-section">
+                        <h2 class="section-title">My Contributions</h2>
+                        <ul class="contribution-list">
+                            <li>Implemented player shooting mechanics — firing logic, bullet entity spawning via SpawnHelpers, and projectile lifetime management</li>
+                            <li>Worked on enemy behavior and wave logic — spider enemy spawning, movement patterns, and difficulty scaling across waves</li>
+                            <li>Built and deployed the online leaderboard system end-to-end: in-game C++ HTTP client, Python/Flask REST API, PostgreSQL on Supabase, deployed on Render</li>
+                            <li>Contributed to collision detection between player bullets and enemy entities</li>
+                            <li>Collaborated across 4 development sprints using Git branching with regular merges into the team main branch</li>
+                        </ul>
+                    </section>
+
+                    <section class="project-section">
+                        <h2 class="section-title">Features</h2>
+                        <ul class="feature-list">
+                            <li><strong>Custom Vulkan Renderer</strong> — built directly on the Vulkan API with no engine abstraction</li>
+                            <li><strong>ECS Architecture</strong> — EnTT-based with CCL signal-driven component updates</li>
+                            <li><strong>Bullet System</strong> — player projectiles with collision detection and deferred entity destruction</li>
+                            <li><strong>Live Leaderboard</strong> — in-game HTTP client submitting scores to a deployed server; top 10 global scores displayed post-game</li>
+                            <li><strong>Online Leaderboard API</strong> — Python/Flask REST server with PostgreSQL persistence</li>
+                            <li><strong>3D Level Loading</strong> — custom level loader for environment geometry</li>
+                            <li><strong>CMake Build System</strong> — cross-platform build configuration</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <aside class="project-sidebar">
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">Project Info</h3>
+                        <div class="sidebar-item">
+                            <span class="sidebar-label">Role</span>
+                            <span class="sidebar-value">Gameplay Programmer</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <span class="sidebar-label">Type</span>
+                            <span class="sidebar-value">Team Project</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <span class="sidebar-label">Language</span>
+                            <span class="sidebar-value">C++ | Python</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <span class="sidebar-label">Graphics API</span>
+                            <span class="sidebar-value">Vulkan</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <span class="sidebar-label">Architecture</span>
+                            <span class="sidebar-value">EnTT ECS</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <span class="sidebar-label">Year</span>
+                            <span class="sidebar-value">2025</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">Team</h3>
+                        <div class="sidebar-item">
+                            <span class="sidebar-label">Studio</span>
+                            <span class="sidebar-value">Team Purple</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <span class="sidebar-label">School</span>
+                            <span class="sidebar-value">Full Sail University</span>
+                        </div>
+                    </div>
+
+                    <a href="https://github.com/DrSakSquatch69/DrSakSquatch69.github.io/tree/main/Projects/Arachnivasion" class="github-btn" target="_blank">View Source on GitHub</a>
+                </aside>
+            </div>
+            
+            <section id="contact" class="contact">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <!-- Professional -->
+                    <div class="contact-group">
+                        <h3 style="color: var(--accent-color); margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.1em;">Professional</h3>
+                        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                            <a href="mailto:JDBlackburn.developer@outlook.com" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: #eee;"><i class="fas fa-envelope" style="color: #4ade80;"></i> JDBlackburn.developer@outlook.com</a>
+                            <a href="https://linkedin.com/in/squatchworks" target="_blank" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: #eee;"><i class="fab fa-linkedin" style="color: #4ade80;"></i> LinkedIn</a>
+                            <a href="https://github.com/DrSakSquatch69" target="_blank" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: #eee;"><i class="fab fa-github" style="color: #4ade80;"></i> GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Community -->
+                    <div class="contact-group">
+                        <h3 style="color: var(--accent-color); margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.1em;">Community</h3>
+                        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                            <span style="display: flex; align-items: center; gap: 0.75rem; color: #eee;"><i class="fab fa-discord" style="color: #4ade80;"></i> drsacksquatch69</span>
+                            <a href="https://discord.gg/Jet7KdppU7" target="_blank" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: #eee;"><i class="fas fa-server" style="color: #4ade80;"></i> Squatch and Goat Gaming</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Jacob Blackburn. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
