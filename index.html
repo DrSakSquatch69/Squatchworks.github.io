@@ -13,6 +13,8 @@
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -132,16 +134,34 @@
 
         <section id="about" class="about">
             <h2 class="section-title">About Me</h2>
-            <p>I'm Jacob, a Gameplay Programmer with a background in complex systems—from C++ engine development to AI behavior in Unity. I'm driven by the challenge of creating robust, modular code that translates into seamless, high-performance gameplay.</p>
+            <div class="about-content" style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                <p>I am a highly driven Gameplay Programmer specializing in **C++ engine architecture** and **Unreal Engine 5** development. My expertise lies in the bridge between technical design and gameplay systems—whether it's building custom Vulkan renderers from the ground up or architecting complex AI behavior trees in Unity.</p>
+                <p>Currently nearing completion of my Bachelor's degree in Game Development at Full Sail University, I have spent the last few years mastering the systems that make games work. From handling low-level memory management to deploying global leaderboard APIs, I focus on creating code that is as scalable as it is performant.</p>
+                <p>Beyond the IDE, I'm a single father to two boys and a passionate follower of futures markets. I bring a "real-world" work ethic—forged through a decade of experience in high-pressure manufacturing and management roles—to every development sprint I join.</p>
+            </div>
         </section>
 
         <section id="contact" class="contact">
             <h2 class="section-title">Get in Touch</h2>
-            <p>I'm always open to discussing new projects or gameplay systems. You can reach me at:</p>
-            <div class="contact-links">
-                <a href="mailto:JDBlackburn.developer@outlook.com">JDBlackburn.developer@outlook.com</a>
-                <a href="https://github.com/DrSakSquatch69">GitHub</a>
-                <a href="https://linkedin.com/in/squatchworks">LinkedIn</a>
+            <div class="contact-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <!-- Professional -->
+                <div class="contact-group">
+                    <h3 style="color: var(--accent-color); margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.1em;">Professional</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <a href="mailto:JDBlackburn.developer@outlook.com" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: #eee;"><i class="fas fa-envelope" style="color: #4ade80;"></i> JDBlackburn.developer@outlook.com</a>
+                        <a href="https://linkedin.com/in/squatchworks" target="_blank" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: #eee;"><i class="fab fa-linkedin" style="color: #4ade80;"></i> LinkedIn</a>
+                        <a href="https://github.com/DrSakSquatch69" target="_blank" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: #eee;"><i class="fab fa-github" style="color: #4ade80;"></i> GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Community -->
+                <div class="contact-group">
+                    <h3 style="color: var(--accent-color); margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.1em;">Community</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <span style="display: flex; align-items: center; gap: 0.75rem; color: #eee;"><i class="fab fa-discord" style="color: #4ade80;"></i> squatch_works</span>
+                        <a href="https://discord.gg/Sqatchworks" target="_blank" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: #eee;"><i class="fas fa-server" style="color: #4ade80;"></i> Squatchworks Server</a>
+                    </div>
+                </div>
             </div>
         </section>
 
