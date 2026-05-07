@@ -134,6 +134,10 @@
       border-radius: 16px;
       background: linear-gradient(180deg, rgba(16,38,36,.45), rgba(8,19,18,.35));
     }
+    .entry.featured {
+      border-color: rgba(57,208,179,.35);
+      background: linear-gradient(180deg, rgba(57,208,179,.07), rgba(8,19,18,.40));
+    }
     .entry-head {
       display: flex;
       justify-content: space-between;
@@ -151,6 +155,12 @@
       font-weight: 700;
       font-size: 14px;
     }
+    .entry .subtitle {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-style: italic;
+    }
     .entry .stack {
       margin: 8px 0 10px;
       color: var(--teal);
@@ -159,6 +169,20 @@
     }
     .entry ul { margin: 0; padding-left: 20px; }
     .entry li { margin-bottom: 8px; line-height: 1.55; color: var(--text); font-size: 15px; }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(90deg, rgba(57,208,179,.25), rgba(255,177,74,.15));
+      border: 1px solid rgba(57,208,179,.4);
+      color: var(--teal);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
     .history-item {
       display: flex;
       justify-content: space-between;
@@ -187,8 +211,8 @@
         <div class="tagline">Gameplay / Combat Programmer</div>
         <div class="contact">
           Russells Point, Ohio &bull; 937-722-1922 &bull; JDBlackburn.developer@outlook.com<br>
-          <a href="https://linkedin.com/in/squatchworks">linkedin.com/in/squatchworks</a> &bull;
-          <a href="https://squatchworks.github.io">Squatchworks.github.io</a>
+          <a href="https://linkedin.com/in/squatchworks" target="_blank" rel="noopener noreferrer">linkedin.com/in/squatchworks</a> &bull;
+          <a href="https://squatchworks.github.io" target="_blank" rel="noopener noreferrer">Squatchworks.github.io</a>
         </div>
       </div>
 
@@ -196,7 +220,7 @@
         <aside class="sidebar">
           <div class="card">
             <h2 class="panel-title">Profile</h2>
-            <div class="summary">Gameplay and combat programmer focused on building responsive player systems, scalable gameplay architecture, and readable moment-to-moment combat. Strong in Unreal Engine workflows, gameplay logic, AI behavior, state machines, technical design, and systems that support action-heavy player experiences.</div>
+            <div class="summary">Gameplay and combat programmer focused on building responsive player systems, scalable gameplay architecture, and readable combat interactions in Unreal Engine 5. Strong foundation in C++, C#, AI behavior, state machines, animation support systems, and technical design, with experience in custom engine development using Vulkan, ECS architecture, REST API pipelines, and gameplay UI implementation.</div>
           </div>
 
           <div class="card">
@@ -207,23 +231,30 @@
               <div class="pill">C++</div>
               <div class="pill">C#</div>
               <div class="pill">Python</div>
-              <div class="pill">Combat Systems</div>
-              <div class="pill">Gameplay Architecture</div>
+              <div class="pill">Combat Mechanics</div>
+              <div class="pill">Gameplay Systems</div>
               <div class="pill">AI Behavior</div>
               <div class="pill">State Machines</div>
               <div class="pill">Animation Support</div>
-              <div class="pill">ECS</div>
-              <div class="pill">Vulkan</div>
+              <div class="pill">ECS Architecture</div>
+              <div class="pill">Vulkan API</div>
+              <div class="pill">Collision Systems</div>
+              <div class="pill">Projectile Lifecycle</div>
               <div class="pill">Git / Perforce</div>
+              <div class="pill">PostgreSQL / Flask</div>
+              <div class="pill">OOP / Design Patterns</div>
               <div class="pill">Technical Design</div>
+              <div class="pill">Visual Studio</div>
+              <div class="pill">UI Systems</div>
+              <div class="pill">Math for Games (2D/3D)</div>
             </div>
           </div>
 
           <div class="card">
             <h2 class="panel-title">Education</h2>
             <div class="summary">
-              <strong>B.S. Game Development</strong><br>
-              Full Sail University Online<br>
+              <strong>Bachelor of Science in Game Development (B.S.)</strong><br>
+              Full Sail University, Winter Park, FL<br>
               Expected July 2026
             </div>
           </div>
@@ -238,30 +269,49 @@
           <section class="main-section">
             <h2 class="section-title">Featured Projects</h2>
 
+            <!-- SoB — Lead project, pinned first -->
+            <article class="entry featured">
+              <div class="entry-head">
+                <h3>Shadows of Beginnings <span class="badge">In Production</span></h3>
+                <div class="date">Jan 2025 &mdash; Present</div>
+              </div>
+              <div class="subtitle">Nebula Interactive &mdash; Lead Gameplay &amp; Combat Programmer, Remote</div>
+              <div class="stack">Unreal Engine 5.6 &bull; C++ &bull; Blueprint &bull; ARPG</div>
+              <ul>
+                <li>Architecting and shipping core combat and gameplay systems for a full commercial ARPG in Unreal Engine 5.6, targeting release within a 2-month window.</li>
+                <li>Designed and implemented a modular combat state machine handling player attacks, enemy responses, hit reactions, and combo sequencing across multiple character classes.</li>
+                <li>Built and integrated animation blending systems using UE5 animation blueprints, supporting smooth transitions across locomotion, combat, and ability states.</li>
+                <li>Engineered class progression and ability systems driving player build diversity across the game's RPG progression loop.</li>
+                <li>Collaborating with cross-discipline team members on systems design, content integration, and milestone delivery as lead programmer.</li>
+              </ul>
+            </article>
+
             <article class="entry">
               <div class="entry-head">
                 <h3>Arachnivasion</h3>
-                <div class="date">2025 &mdash; Team Project</div>
+                <div class="date">Jan 2025 &mdash; Dec 2025</div>
               </div>
-              <div class="stack">Vulkan &bull; C++ &bull; EnTT ECS &bull; Python &bull; Flask &bull; PostgreSQL</div>
+              <div class="subtitle">Team Project, Remote</div>
+              <div class="stack">C++ &bull; Vulkan &bull; EnTT ECS &bull; Python &bull; Flask &bull; PostgreSQL</div>
               <ul>
-                <li>Built the online leaderboard pipeline end-to-end, connecting a C++ HTTP client to a Python/Flask REST API backed by PostgreSQL.</li>
-                <li>Implemented core gameplay systems for player shooting, projectile lifecycle handling, and combat-facing interactions.</li>
-                <li>Contributed collision detection and enemy wave spawning systems that improved encounter pacing and gameplay readability.</li>
-                <li>Collaborated across four development sprints with regular Git-based integration and shared ownership of gameplay systems.</li>
+                <li>Engineered the online leaderboard pipeline end-to-end, connecting a C++ HTTP client to a Python/Flask REST API backed by PostgreSQL, handling a player base across 4 development sprints.</li>
+                <li>Authored core gameplay systems for player shooting, projectile lifecycle handling, and combat interactions covering approximately 3 distinct combat states.</li>
+                <li>Designed collision detection and wave spawning systems across 5+ enemy types, directly improving encounter pacing and gameplay readability.</li>
+                <li>Managed version control across a 4-person team using Git with regular main-branch integration and sprint-based code reviews.</li>
               </ul>
             </article>
 
             <article class="entry">
               <div class="entry-head">
                 <h3>Veggie Town Massacre</h3>
-                <div class="date">2024 &mdash; Team Project</div>
+                <div class="date">Jan 2024 &mdash; Dec 2024</div>
               </div>
+              <div class="subtitle">Team Project, Remote</div>
               <div class="stack">Unity &bull; C#</div>
               <ul>
-                <li>Architected and implemented enemy AI behavior systems for wave-based encounters and escalating gameplay pressure.</li>
-                <li>Designed and integrated UI systems and level logic that improved clarity, player feedback, and encounter readability.</li>
-                <li>Coordinated gameplay system integration across team workflows, code handoff, and content setup.</li>
+                <li>Architected and delivered enemy AI behavior systems for wave-based encounters across 3 difficulty tiers, driving escalating gameplay pressure.</li>
+                <li>Designed and integrated UI systems and level logic that improved player feedback clarity across 4 playable levels.</li>
+                <li>Coordinated gameplay system integration with a 3-person team across code handoff, asset pipeline, and content setup workflows.</li>
               </ul>
             </article>
 
@@ -270,44 +320,72 @@
                 <h3>Conway's Game of Life</h3>
                 <div class="date">Solo Project</div>
               </div>
+              <div class="subtitle">Solo Project</div>
               <div class="stack">C++ &bull; Custom GUI</div>
               <ul>
-                <li>Built a full cellular automaton simulation from scratch in C++ with a custom GUI for interaction and state control.</li>
-                <li>Developed systems for simulation management, state editing, pattern visualization, and complex rule iteration.</li>
-                <li>Implemented file persistence for saving and loading simulation states cleanly across sessions.</li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="main-section">
-            <h2 class="section-title">Core Expertise</h2>
-            <article class="entry">
-              <ul>
-                <li>Gameplay systems implementation with a focus on combat flow, responsiveness, and technical readability.</li>
-                <li>AI and state machine design for enemies, encounter behavior, and modular gameplay logic.</li>
-                <li>Systems-driven technical design across ECS architecture, UI support systems, and gameplay feature integration.</li>
-                <li>Foundation in Vulkan graphics programming, REST/database integration, and tool-friendly engineering workflows.</li>
+                <li>Built a full cellular automaton simulation from scratch in C++ with a custom GUI powering over 10 interactive control states.</li>
+                <li>Developed systems for simulation management, cell-state editing, and pattern visualization enabling grids of 1000+ cells.</li>
+                <li>Shipped file persistence for saving and loading complex simulation states, enabling repeatable test configurations.</li>
               </ul>
             </article>
           </section>
 
           <section class="main-section">
             <h2 class="section-title">Work History</h2>
-            <article class="entry">
-              <div class="history-item"><div><strong>Cook / Prep</strong><span>Kilwins Chocolates, Fudge &amp; Ice Cream</span></div><div class="years">March 2026&ndash;Present</div></div>
-              <div class="history-item"><div><strong>Line Cook</strong><span>Brewfontaine</span></div><div class="years">2024&ndash;2025</div></div>
-              <div class="history-item"><div><strong>Crew Member</strong><span>Dairy Queen</span></div><div class="years">2023&ndash;2024</div></div>
-              <div class="history-item"><div><strong>Production Worker</strong><span>World Class Plastics / AGC Automotive Americas</span></div><div class="years">2023</div></div>
-              <div class="history-item"><div><strong>Forklift Operator / Material Handler</strong><span>SpartanNash / Plastipak / NK Parts</span></div><div class="years">2021&ndash;2023</div></div>
-              <div class="history-item"><div><strong>Warehouse Driver</strong><span>Acloche</span></div><div class="years">2020&ndash;2021</div></div>
-              <div class="history-item"><div><strong>Machine Operator</strong><span>Cargill</span></div><div class="years">2018&ndash;2020</div></div>
-              <div class="history-item"><div><strong>Lathe Operator</strong><span>ATI (Ada, OH)</span></div><div class="years">2017&ndash;2018</div></div>
-              <div class="history-item"><div><strong>Production Assembly</strong><span>Adecco (ELP Honda)</span></div><div class="years">2016&ndash;2017</div></div>
-              <div class="history-item"><div><strong>Security Guard</strong><span>Genric</span></div><div class="years">2015&ndash;2016</div></div>
-              <div class="history-item"><div><strong>Fast Food Manager</strong><span>Burger King</span></div><div class="years">2014&ndash;2015</div></div>
-              <div class="history-item"><div><strong>Pizza Delivery Driver</strong><span>Pizza Hut</span></div><div class="years">2013&ndash;2014</div></div>
-              <div class="history-item"><div><strong>Plastic Injection Mold Operator</strong><span>PCPI</span></div><div class="years">2011&ndash;2012</div></div>
-            </article>
+            <p style="font-size:14px;color:var(--muted);margin:0 0 18px;line-height:1.6;">Over a decade of consistent employment across manufacturing, logistics, food service, and security industries, demonstrating reliability, adaptability, and a strong work ethic under pressure. Each role required attention to detail, accountability, and the ability to learn new systems quickly — the same discipline that drives my approach to software development and game programming.</p>
+
+            <div class="history-item">
+              <div><strong>Cook / Prep</strong><span>Kilwins Chocolates, Fudge &amp; Ice Cream</span></div>
+              <div class="years">Mar 2026 – Present</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Line Cook</strong><span>Brewfontaine</span></div>
+              <div class="years">Jan 2024 – Dec 2025</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Crew Member</strong><span>Dairy Queen</span></div>
+              <div class="years">Jan 2023 – Dec 2024</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Production Worker</strong><span>World Class Plastics / AGC Automotive Americas</span></div>
+              <div class="years">2023</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Forklift Operator / Material Handler</strong><span>SpartanNash / Plastipak / NK Parts</span></div>
+              <div class="years">Jan 2021 – Dec 2023</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Warehouse Driver</strong><span>Acloche</span></div>
+              <div class="years">Jan 2020 – Dec 2021</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Machine Operator</strong><span>Cargill</span></div>
+              <div class="years">Jan 2018 – Dec 2020</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Lathe Operator</strong><span>ATI (Ada, OH)</span></div>
+              <div class="years">Jan 2017 – Dec 2018</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Production Assembly</strong><span>Adecco (ELP Honda)</span></div>
+              <div class="years">Jan 2016 – Dec 2017</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Security Guard</strong><span>Genric</span></div>
+              <div class="years">Jan 2015 – Dec 2016</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Fast Food Manager</strong><span>Burger King</span></div>
+              <div class="years">Jan 2014 – Dec 2015</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Pizza Delivery Driver</strong><span>Pizza Hut</span></div>
+              <div class="years">Jan 2013 – Dec 2014</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Plastic Injection Mold Operator</strong><span>PCPI</span></div>
+              <div class="years">Jan 2011 – Dec 2012</div>
+            </div>
           </section>
         </main>
       </div>
