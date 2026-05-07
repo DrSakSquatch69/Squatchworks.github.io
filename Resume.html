@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob "Squatch" Blackburn | Resume</title>
+  <style>
+    :root {
+      --bg: #081312;
+      --panel: #0d1d1b;
+      --panel-2: #102624;
+      --text: #e8f3f1;
+      --muted: #9fb7b1;
+      --teal: #39d0b3;
+      --cyan: #77f7ff;
+      --amber: #ffb14a;
+      --line: rgba(119, 247, 255, 0.18);
+      --glow: rgba(57, 208, 179, 0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(57,208,179,.10), transparent 32%),
+        radial-gradient(circle at top right, rgba(255,177,74,.10), transparent 24%),
+        linear-gradient(180deg, #050909 0%, #081312 100%);
+      color: var(--text);
+    }
+    .wrap { max-width: 1160px; margin: 0 auto; padding: 32px; }
+    .hero {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(13,29,27,.94), rgba(8,19,18,.98));
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 70px rgba(0,0,0,.35);
+    }
+    .banner {
+      padding: 42px 42px 26px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(57,208,179,.08), rgba(255,177,74,.05));
+    }
+    .accent-bar {
+      width: 180px; height: 6px; border-radius: 999px;
+      background: linear-gradient(90deg, var(--teal), var(--amber));
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 48px;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+    }
+    h1 .glow { color: var(--teal); text-shadow: 0 0 18px var(--glow); }
+    .tagline {
+      margin-top: 12px;
+      font-size: 18px;
+      color: var(--cyan);
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .contact {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .contact a { color: var(--teal); text-decoration: none; }
+    .grid {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 0;
+    }
+    .sidebar {
+      background: linear-gradient(180deg, rgba(16,38,36,.96), rgba(9,21,20,.98));
+      padding: 28px;
+      border-right: 1px solid var(--line);
+    }
+    .main {
+      padding: 28px 32px 36px;
+      background: rgba(7,16,15,.9);
+    }
+    .panel-title {
+      margin: 0 0 14px;
+      font-size: 13px;
+      letter-spacing: .18em;
+      color: var(--teal);
+      text-transform: uppercase;
+    }
+    .card {
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    .summary {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+    }
+    .pill-wrap { display: flex; flex-wrap: wrap; gap: 10px; }
+    .pill {
+      border: 1px solid rgba(57,208,179,.45);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      background: rgba(57,208,179,.06);
+    }
+    .main-section { margin-bottom: 30px; }
+    .section-title {
+      font-size: 20px;
+      margin: 0 0 16px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .section-title::before {
+      content: "";
+      display: block;
+      width: 36px;
+      height: 3px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--teal), var(--amber));
+    }
+    .entry {
+      margin-bottom: 20px;
+      padding: 18px 18px 14px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(16,38,36,.45), rgba(8,19,18,.35));
+    }
+    .entry.featured {
+      border-color: rgba(57,208,179,.35);
+      background: linear-gradient(180deg, rgba(57,208,179,.07), rgba(8,19,18,.40));
+    }
+    .entry-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .entry h3 {
+      margin: 0;
+      font-size: 22px;
+      color: #fff;
+    }
+    .entry .date {
+      color: var(--amber);
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .entry .subtitle {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-style: italic;
+    }
+    .entry .stack {
+      margin: 8px 0 10px;
+      color: var(--teal);
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .entry ul { margin: 0; padding-left: 20px; }
+    .entry li { margin-bottom: 8px; line-height: 1.55; color: var(--text); font-size: 15px; }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(90deg, rgba(57,208,179,.25), rgba(255,177,74,.15));
+      border: 1px solid rgba(57,208,179,.4);
+      color: var(--teal);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    .history-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0;
+      border-bottom: 1px dashed rgba(119,247,255,.12);
+      font-size: 14px;
+    }
+    .history-item:last-child { border-bottom: 0; }
+    .history-item strong { display: block; color: #fff; margin-bottom: 2px; }
+    .history-item span { color: var(--muted); }
+    .history-item .years { color: var(--amber); white-space: nowrap; font-weight: 700; }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr; }
+      .sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
+      h1 { font-size: 36px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="banner">
+        <div class="accent-bar"></div>
+        <h1>Jacob <span class="glow">Squatch</span> Blackburn</h1>
+        <div class="tagline">Gameplay / Combat Programmer</div>
+        <div class="contact">
+          Russells Point, Ohio &bull; 937-722-1922 &bull; JDBlackburn.developer@outlook.com<br>
+          <a href="https://linkedin.com/in/squatchworks" target="_blank" rel="noopener noreferrer">linkedin.com/in/squatchworks</a> &bull;
+          <a href="https://squatchworks.github.io" target="_blank" rel="noopener noreferrer">Squatchworks.github.io</a>
+        </div>
+      </div>
+
+      <div class="grid">
+        <aside class="sidebar">
+          <div class="card">
+            <h2 class="panel-title">Profile</h2>
+            <div class="summary">Gameplay and combat programmer focused on building responsive player systems, scalable gameplay architecture, and readable combat interactions in Unreal Engine 5. Strong foundation in C++, C#, AI behavior, state machines, animation support systems, and technical design, with experience in custom engine development using Vulkan, ECS architecture, REST API pipelines, and gameplay UI implementation.</div>
+          </div>
+
+          <div class="card">
+            <h2 class="panel-title">Skill Set</h2>
+            <div class="pill-wrap">
+              <div class="pill">Unreal Engine 5</div>
+              <div class="pill">Unity</div>
+              <div class="pill">C++</div>
+              <div class="pill">C#</div>
+              <div class="pill">Python</div>
+              <div class="pill">Combat Mechanics</div>
+              <div class="pill">Gameplay Systems</div>
+              <div class="pill">AI Behavior</div>
+              <div class="pill">State Machines</div>
+              <div class="pill">Animation Support</div>
+              <div class="pill">ECS Architecture</div>
+              <div class="pill">Vulkan API</div>
+              <div class="pill">Collision Systems</div>
+              <div class="pill">Projectile Lifecycle</div>
+              <div class="pill">Git / Perforce</div>
+              <div class="pill">PostgreSQL / Flask</div>
+              <div class="pill">OOP / Design Patterns</div>
+              <div class="pill">Technical Design</div>
+              <div class="pill">Visual Studio</div>
+              <div class="pill">UI Systems</div>
+              <div class="pill">Math for Games (2D/3D)</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="panel-title">Education</h2>
+            <div class="summary">
+              <strong>Bachelor of Science in Game Development (B.S.)</strong><br>
+              Full Sail University, Winter Park, FL<br>
+              Expected July 2026
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom:0;padding-bottom:0;border-bottom:0;">
+            <h2 class="panel-title">Career Arc</h2>
+            <div class="summary">Lead with gameplay and combat programming. Long-term goal: build an original studio around cryptozoology, lesser-known cryptids, UFOs, and alien encounter fiction — a deeply personal brand backed by serious systems-driven design.</div>
+          </div>
+        </aside>
+
+        <main class="main">
+          <section class="main-section">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <!-- SoB — Lead project, pinned first -->
+            <article class="entry featured">
+              <div class="entry-head">
+                <h3>Shadows of Beginnings <span class="badge">In Production</span></h3>
+                <div class="date">Jan 2025 &mdash; Present</div>
+              </div>
+              <div class="subtitle">Nebula Interactive &mdash; Lead Gameplay &amp; Combat Programmer, Remote</div>
+              <div class="stack">Unreal Engine 5.6 &bull; C++ &bull; Blueprint &bull; ARPG</div>
+              <ul>
+                <li>Architecting and shipping core combat and gameplay systems for a full commercial ARPG in Unreal Engine 5.6, targeting release within a 2-month window.</li>
+                <li>Designed and implemented a modular combat state machine handling player attacks, enemy responses, hit reactions, and combo sequencing across multiple character classes.</li>
+                <li>Built and integrated animation blending systems using UE5 animation blueprints, supporting smooth transitions across locomotion, combat, and ability states.</li>
+                <li>Engineered class progression and ability systems driving player build diversity across the game's RPG progression loop.</li>
+                <li>Collaborating with cross-discipline team members on systems design, content integration, and milestone delivery as lead programmer.</li>
+              </ul>
+            </article>
+
+            <article class="entry">
+              <div class="entry-head">
+                <h3>Arachnivasion</h3>
+                <div class="date">Jan 2025 &mdash; Dec 2025</div>
+              </div>
+              <div class="subtitle">Team Project, Remote</div>
+              <div class="stack">C++ &bull; Vulkan &bull; EnTT ECS &bull; Python &bull; Flask &bull; PostgreSQL</div>
+              <ul>
+                <li>Engineered the online leaderboard pipeline end-to-end, connecting a C++ HTTP client to a Python/Flask REST API backed by PostgreSQL, handling a player base across 4 development sprints.</li>
+                <li>Authored core gameplay systems for player shooting, projectile lifecycle handling, and combat interactions covering approximately 3 distinct combat states.</li>
+                <li>Designed collision detection and wave spawning systems across 5+ enemy types, directly improving encounter pacing and gameplay readability.</li>
+                <li>Managed version control across a 4-person team using Git with regular main-branch integration and sprint-based code reviews.</li>
+              </ul>
+            </article>
+
+            <article class="entry">
+              <div class="entry-head">
+                <h3>Veggie Town Massacre</h3>
+                <div class="date">Jan 2024 &mdash; Dec 2024</div>
+              </div>
+              <div class="subtitle">Team Project, Remote</div>
+              <div class="stack">Unity &bull; C#</div>
+              <ul>
+                <li>Architected and delivered enemy AI behavior systems for wave-based encounters across 3 difficulty tiers, driving escalating gameplay pressure.</li>
+                <li>Designed and integrated UI systems and level logic that improved player feedback clarity across 4 playable levels.</li>
+                <li>Coordinated gameplay system integration with a 3-person team across code handoff, asset pipeline, and content setup workflows.</li>
+              </ul>
+            </article>
+
+            <article class="entry">
+              <div class="entry-head">
+                <h3>Conway's Game of Life</h3>
+                <div class="date">Solo Project</div>
+              </div>
+              <div class="subtitle">Solo Project</div>
+              <div class="stack">C++ &bull; Custom GUI</div>
+              <ul>
+                <li>Built a full cellular automaton simulation from scratch in C++ with a custom GUI powering over 10 interactive control states.</li>
+                <li>Developed systems for simulation management, cell-state editing, and pattern visualization enabling grids of 1000+ cells.</li>
+                <li>Shipped file persistence for saving and loading complex simulation states, enabling repeatable test configurations.</li>
+              </ul>
+            </article>
+          </section>
+
+          <section class="main-section">
+            <h2 class="section-title">Work History</h2>
+            <p style="font-size:14px;color:var(--muted);margin:0 0 18px;line-height:1.6;">Over a decade of consistent employment across manufacturing, logistics, food service, and security industries, demonstrating reliability, adaptability, and a strong work ethic under pressure. Each role required attention to detail, accountability, and the ability to learn new systems quickly — the same discipline that drives my approach to software development and game programming.</p>
+
+            <div class="history-item">
+              <div><strong>Cook / Prep</strong><span>Kilwins Chocolates, Fudge &amp; Ice Cream</span></div>
+              <div class="years">Mar 2026 – Present</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Line Cook</strong><span>Brewfontaine</span></div>
+              <div class="years">Jan 2024 – Dec 2025</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Crew Member</strong><span>Dairy Queen</span></div>
+              <div class="years">Jan 2023 – Dec 2024</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Production Worker</strong><span>World Class Plastics / AGC Automotive Americas</span></div>
+              <div class="years">2023</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Forklift Operator / Material Handler</strong><span>SpartanNash / Plastipak / NK Parts</span></div>
+              <div class="years">Jan 2021 – Dec 2023</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Warehouse Driver</strong><span>Acloche</span></div>
+              <div class="years">Jan 2020 – Dec 2021</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Machine Operator</strong><span>Cargill</span></div>
+              <div class="years">Jan 2018 – Dec 2020</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Lathe Operator</strong><span>ATI (Ada, OH)</span></div>
+              <div class="years">Jan 2017 – Dec 2018</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Production Assembly</strong><span>Adecco (ELP Honda)</span></div>
+              <div class="years">Jan 2016 – Dec 2017</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Security Guard</strong><span>Genric</span></div>
+              <div class="years">Jan 2015 – Dec 2016</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Fast Food Manager</strong><span>Burger King</span></div>
+              <div class="years">Jan 2014 – Dec 2015</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Pizza Delivery Driver</strong><span>Pizza Hut</span></div>
+              <div class="years">Jan 2013 – Dec 2014</div>
+            </div>
+            <div class="history-item">
+              <div><strong>Plastic Injection Mold Operator</strong><span>PCPI</span></div>
+              <div class="years">Jan 2011 – Dec 2012</div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
